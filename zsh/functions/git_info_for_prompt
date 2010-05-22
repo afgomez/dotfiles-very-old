@@ -39,10 +39,18 @@ if [ -n "$g" ]; then
       fi
     fi
   fi
- 
+
+
   if [ -n "$1" ]; then
     printf "$1" "${b##refs/heads/}$r"
   else
-    printf "[%s]" "${b##refs/heads/}$r"
+    local color
+    if [ "$b" = "refs/heads/master" ]
+    then
+      color="31"
+    else
+      color="36"
+    fi
+    printf "[\\033[${color}m%s\\033[0m]" "${b##refs/heads/}$r"
   fi
 fi

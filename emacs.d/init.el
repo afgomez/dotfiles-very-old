@@ -4,8 +4,8 @@
 (setq custom-file "~/.emacs.d/rmm5t/custom.el")
 (load custom-file 'noerror)
 
-(load "config/global")
 (load "config/defuns")
+(load "config/global")
 (load "config/ido")
 (load "config/bindings")
 

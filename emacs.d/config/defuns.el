@@ -1,8 +1,8 @@
+;; Load vendor libraries
 (defun vendor (library &rest autoload-functions)
   (let* ((file (symbol-name library))
          (normal (concat "~/.emacs.d/vendor/" file))
          (suffix (concat normal ".el"))
-         (personal (concat "~/.emacs.d/config/" file))
 (found nil))
     (cond
      ((file-directory-p normal) (add-to-list 'load-path normal) (set 'found t))
@@ -12,10 +12,8 @@
       (if autoload-functions
           (dolist (autoload-function autoload-functions)
             (autoload autoload-function (symbol-name library) nil t))
-        (require library)))
-    (when (file-exists-p (concat personal ".el"))
-      (load personal))))
-      
+        (require library)))))
+
 
 ;; Find recent files with ido
 (defun recentf-ido-find-file ()
@@ -24,3 +22,27 @@
   (let ((file (ido-completing-read "Choose recent file: " recentf-list nil t)))
     (when file
       (find-file file))))
+
+
+;; Set frame size according to resolution
+(defun set-frame-size-according-to-resolution ()
+  (interactive)
+  (if window-system
+  (progn
+    ;; use 120 char wide window for largeish displays
+    ;; and smaller 80 column windows for smaller displays
+    ;; pick whatever numbers make sense for you
+    (if (> (x-display-pixel-width) 1280)
+        (add-to-list 'default-frame-alist (cons 'width 160))
+      (add-to-list 'default-frame-alist (cons 'width 80)))
+    ;; for the height, subtract a couple hundred pixels
+    ;; from the screen height (for panels, menubars and
+    ;; whatnot), then divide by the height of a char to
+    ;; get the height we want
+    (add-to-list 'default-frame-alist
+                 (cons 'height (/ (- (x-display-pixel-height) 150) (frame-char-height)))))))
+
+;; Disable toolbar
+(defun turn-off-tool-bar ()
+  (tool-bar-mode -1))
+

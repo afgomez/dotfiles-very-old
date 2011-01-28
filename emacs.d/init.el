@@ -13,3 +13,8 @@
 ;; Color themes
 (vendor 'color-theme)
 (load "config/color-theme")
+
+
+;; Other libraries and stuff
+(vendor 'yasnippet)
+(load "config/yasnippet")

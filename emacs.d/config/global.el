@@ -22,3 +22,9 @@
 
 ;; Save a list of recent files visited.
 (recentf-mode 1)
+
+;; Show line numbers
+(setq linum-format " %d ")
+(global-linum-mode 1)
+
+

@@ -21,7 +21,7 @@
 (setq transient-mark-mode t)
 
 ;; Remove selection with Del/BS key (like all other editors around the world)
-(delete-selection-mode 1)
+;;(delete-selection-mode 1)
 
 ;; Start server
 (server-start)

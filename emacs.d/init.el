@@ -12,10 +12,11 @@
 ;; Color themes
 (load "config/color-theme")
 
-;; Other libraries and stuff
+;; Yasnippet
 (load "config/yasnippet")
 
-;; Rinari
+;; Web development combo
 (vendor 'rinari)
+(load "config/nxhtml")
 
 

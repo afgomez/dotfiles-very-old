@@ -1,7 +1,7 @@
 (add-to-list 'load-path "~/.emacs.d")
 (add-to-list 'load-path "~/.emacs.d/vendor")
 
-(setq custom-file "~/.emacs.d/rmm5t/custom.el")
+(setq custom-file "~/.emacs.d/custom.el")
 (load custom-file 'noerror)
 
 (load "config/defuns")

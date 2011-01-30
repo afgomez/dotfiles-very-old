@@ -43,6 +43,14 @@
 (setq linum-format " %d ")
 (global-linum-mode 1)
 
+;; Use system clipboard (linux)
+(setq x-select-enable-clipboard t)
+(setq interprogram-paste-function 'x-cut-buffer-or-selection-value)
+
+;; Put scrollbars on right
+(setq vertical-scroll-bars 'right)
+
+
 ;; Start a big frame
 (set-frame-size-according-to-resolution)
 (add-hook 'before-make-frame-hook 'set-frame-size-according-to-resolution)

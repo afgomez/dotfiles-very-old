@@ -9,12 +9,13 @@
 (load "config/ido")
 (load "config/bindings")
 
-
 ;; Color themes
-(vendor 'color-theme)
 (load "config/color-theme")
 
-
 ;; Other libraries and stuff
-(vendor 'yasnippet)
 (load "config/yasnippet")
+
+;; Rinari
+(vendor 'rinari)
+
+

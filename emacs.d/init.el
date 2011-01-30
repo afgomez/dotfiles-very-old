@@ -9,6 +9,7 @@
 (load "config/ido")
 (load "config/bindings")
 (load "config/autopair")
+(load "config/uniquify")
 
 ;; Color themes
 (load "config/color-theme")

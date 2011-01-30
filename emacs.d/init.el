@@ -8,6 +8,7 @@
 (load "config/global")
 (load "config/ido")
 (load "config/bindings")
+(load "config/autopair")
 
 ;; Color themes
 (load "config/color-theme")

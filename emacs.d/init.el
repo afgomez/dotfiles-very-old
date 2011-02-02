@@ -7,7 +7,6 @@
 (load "config/defuns")
 (load "config/global")
 (load "config/ido")
-(load "config/bindings")
 (load "config/autopair")
 (load "config/uniquify")
 
@@ -21,4 +20,6 @@
 (vendor 'rinari)
 (load "config/nxhtml")
 
+;; Key bindings
+(load "config/bindings")
 

@@ -1,6 +1,5 @@
 (load "vendor/nxhtml/autostart.el")
 
-
 (setq nxhtml-global-minor-mode t
       mumamo-chunk-coloring 'submode-colored
       nxhtml-skip-welcome t

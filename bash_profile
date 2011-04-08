@@ -1,8 +1,14 @@
+source ~/.bash/functions
 source ~/.bash/aliases
-source ~/.bash/completions
-source ~/.bash/paths
+
+for file in ~/.bash/completion/* ; do
+  source $file
+done
+
+# Config
 source ~/.bash/config
 
+# Other bash files
 if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi

@@ -1,15 +1,26 @@
-. ~/.zsh/aliases
+# ls
+alias ls='ls -FG'
+alias ll='ls -l'
+alias la='ls -A'
 
-# changing directory to code project
-function c { cd ~/code/$1; }
+# git
+alias gl='git pull'
+alias gp='git push'
+alias gd='git diff'
+alias gc='git commit'
+alias gca='git commit -a'
+alias gco='git checkout'
+alias gb='git branch'
+alias gs='git status'
+alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 
-# alternative to "rails" command to use templates
-function railsapp {
-  template=$1
-  appname=$2
-  shift 2
-  rails $appname -m http://github.com/ryanb/rails-templates/raw/master/$template.rb $@
-}
+# rails
+alias sc='script/console'
+alias ss='script/server'
+alias sg='script/generate'
+alias tlog='tail -f log/development.log'
+alias rst='touch tmp/restart.txt'
+
 
 # misc
-alias reload='. ~/.bash_profile'
+alias reload='source ~/.bash_profile'

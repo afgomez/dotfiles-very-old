@@ -5,7 +5,7 @@ These are config files to set up a system the way I like it.
 
 == Installation
 
-  git clone git://github.com/ryanb/dotfiles ~/.dotfiles
+  git clone git://github.com/afgomez/dotfiles ~/.dotfiles
   cd ~/.dotfiles
   rake install
 
@@ -13,11 +13,7 @@ These are config files to set up a system the way I like it.
 == Environment
 
 I am running on Mac OS X, but it will likely work on Linux as well with 
-minor fiddling. I primarily use zsh, but this includes some older bash 
-files as well. If you would like to switch to zsh, you can do so with 
-the following command.
-
-  chsh -s /bin/zsh
+minor fiddling. I primarily use bash
 
 
 == Features
@@ -62,7 +58,7 @@ also use show_log and hide_log in script/console to show the log inline.
   migrate  # rake db:migrate db:test:clone
   scaffold # script/generate nifty_scaffold
 
-See the other aliases in ~/.zsh/aliases
+See the other aliases in ~/.bash/aliases
 
 If there are some shell configuration settings which you want secure or 
 specific to one system, place it into a ~/.localrc file. This will be 

@@ -1,0 +1,16 @@
+function c {
+  cd ~/code/$1
+}
+
+function __colorize_git_ps1 () {
+  local branch=$(__git_ps1 "%s")
+  if [ -n "$branch" ]; then
+    local color
+    if [[ $branch == master* ]]; then
+      color="31" #Red
+    else
+      color="36" #Blue
+    fi
+    printf "[\e[${color}m${branch}\e[0m]"
+  fi
+}

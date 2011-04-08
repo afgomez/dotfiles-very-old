@@ -1,1 +1,0 @@
-rails new $1 -d mysql -J

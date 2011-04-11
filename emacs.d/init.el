@@ -9,6 +9,7 @@
 (load "config/ido")
 (load "config/autopair")
 (load "config/uniquify")
+(load "config/ffap")
 
 ;; Color themes
 (load "config/color-theme")

@@ -1,3 +1,5 @@
+alias ..='cd ..'
+
 # ls
 alias ls='ls -FG'
 alias ll='ls -l'

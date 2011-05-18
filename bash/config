@@ -8,5 +8,4 @@ PROMPT_COMMAND='history -a'
 
 # Prompt
 GIT_PS1_SHOWDIRTYSTATE=t
-GIT_PS1_SHOWUNTRACKEDFILES=t
 PS1='\w$(__colorize_git_ps1)\$ '

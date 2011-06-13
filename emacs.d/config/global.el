@@ -1,4 +1,4 @@
-;; Mac keys
+;; Mac keyboard
 (setq mac-command-modifier 'meta)
 (setq mac-option-modifier nil)
 
@@ -18,6 +18,9 @@
 ;; Disable backup
 (setq make-backup-files nil)
 (setq auto-save-default nil)
+
+;; Save a list of recent files visited.
+(recentf-mode 1)
 
 ;; Ido-mode
 (ido-mode t)

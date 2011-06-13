@@ -27,4 +27,7 @@
 (setq ido-enable-flex-matching t) ; fuzzy matching is a must have
 (setq ido-enable-last-directory-history nil) ; forget latest selected directory names
 
-
+;; Unique buffer names
+(require 'uniquify)
+(setq
+  uniquify-buffer-name-style 'forward)

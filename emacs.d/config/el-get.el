@@ -5,6 +5,10 @@
       '(el-get nxhtml
         (:name yasnippet
                :after (lambda () (yas/initialize)))
+        (:name bm
+               :type http
+               :url "http://download.savannah.gnu.org/releases/bm/bm-1.53.el"
+               :load "bm-1.53.el")
         (:name ruby-mode
                :type elpa
                :load "ruby-mode.el"

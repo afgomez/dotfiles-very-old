@@ -9,5 +9,6 @@
 (load "config/hooks")
 (load "config/el-get")
 (load "config/bindings")
+(load "config/bookmarks")
 
 

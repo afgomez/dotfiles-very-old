@@ -3,3 +3,7 @@
 
 ;; CUA undo
 (global-set-key (kbd "C-z") 'undo)
+
+;; Textmate-like M-RET
+(define-key global-map (kbd "RET") 'newline-and-indent)
+(global-set-key (kbd "M-RET") 'tm-next-line)

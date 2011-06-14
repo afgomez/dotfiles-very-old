@@ -5,12 +5,20 @@ function c {
 function __colorize_git_ps1 () {
   local branch=$(__git_ps1 "%s")
   if [ -n "$branch" ]; then
-    local color
+    local color="33"
     if [[ $branch == master* ]]; then
       color="31" #Red
-    else
+    fi
+    if [[ $branch == dev* ]]; then
+      color="32" #Green
+    fi
+    if [[ $branch == features* ]]; then
       color="36" #Blue
     fi
+    if [[ $branch == fix* ]]; then
+      color="35" #Light Red
+    fi
+
     printf "[\e[${color}m${branch}\e[0m]"
   fi
 }

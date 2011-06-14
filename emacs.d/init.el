@@ -6,6 +6,7 @@
 (load "config/global")
 (load "config/eyecandy")
 (load "config/package")
+(load "config/hooks")
 (load "config/el-get")
 (load "config/bindings")
 

@@ -7,8 +7,8 @@
                :after (lambda () (yas/initialize)))
         (:name bm
                :type http
-               :url "http://download.savannah.gnu.org/releases/bm/bm-1.53.el"
-               :load "bm-1.53.el")
+               :url "http://cvs.savannah.gnu.org/viewvc/*checkout*/bm/bm/bm.el"
+               :load "bm.el")
         (:name ruby-mode
                :type elpa
                :load "ruby-mode.el"

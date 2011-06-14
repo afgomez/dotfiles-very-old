@@ -12,7 +12,7 @@
 
 ;; Font and theme
 (set-frame-font "inconsolata-14")
-(load-theme 'misterioso)
+(load-theme 'cobalt-dark)
 
 ;; Show column number
 (column-number-mode t)
@@ -21,4 +21,6 @@
 (tooltip-mode -1)
 
 ;; Highlight current line
-;; (global-hl-line-mode t)
+(global-hl-line-mode t)
+
+

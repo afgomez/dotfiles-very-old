@@ -16,8 +16,9 @@
 
 ;; Show column number
 (column-number-mode t)
-(set-fringe-style 'left-only)
 
 ;; No tooltips
 (tooltip-mode -1)
 
+;; Highlight current line
+;; (global-hl-line-mode t)

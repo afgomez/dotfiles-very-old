@@ -3,7 +3,7 @@
 
 (custom-theme-set-faces
  'cobalt-dark
- '(default ((t (:stipple nil :background "#0c1c38" :foreground "#ffffff" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 140 :width normal :foundry "apple" :family "Inconsolata"))))
+ '(default ((t (:stipple nil :background "#0c1c38" :foreground "#ffffff" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal ))))
  '(cursor ((t (:background "#aa5500"))))
  '(escape-glyph ((t (:foreground "#7cff7e"))))
  '(highlight ((t (:background "#071224"))))

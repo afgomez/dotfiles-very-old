@@ -2,7 +2,7 @@
 (require 'el-get)
 
 (setq el-get-sources
-      '(el-get nxhtml
+      '(el-get
         (:name yasnippet
                :after (lambda () (yas/initialize)))
         (:name bm

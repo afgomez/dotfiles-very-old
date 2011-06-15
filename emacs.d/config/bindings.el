@@ -3,6 +3,10 @@
 
 ;; CUA undo
 (global-set-key (kbd "C-z") 'undo)
+(global-set-key (kbd "M-z") 'undo)
+
+;; Duplicate line
+(global-set-key (kbd "C-S-d") "\C-a\C-SPC\C-e\M-w\C-n\C-y\C-p")
 
 ;; Textmate-like M-RET
 (define-key global-map (kbd "RET") 'newline-and-indent)

@@ -22,6 +22,9 @@
 ;; Save a list of recent files visited.
 (recentf-mode 1)
 
+;; C-k also removes newline char
+(setq kill-whole-line t)
+
 ;; Ido-mode
 (ido-mode t)
 (setq ido-enable-flex-matching t) ; fuzzy matching is a must have

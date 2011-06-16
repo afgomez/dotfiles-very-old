@@ -8,6 +8,10 @@
 ;; Remove selection with Del/BS keyt (like all other editors around the world 
 (delete-selection-mode t)
 
+;; Enable CUA rectangles
+(setq cua-enable-cua-keys nil)
+(cua-mode)
+
 ;; Two spaces of tabulation
 (setq-default tab-width 2)
 (setq-default indent-tabs-mode nil)

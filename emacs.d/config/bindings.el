@@ -8,6 +8,9 @@
 ;; Duplicate line
 (global-set-key (kbd "C-S-d") 'duplicate-line)
 
+;; Move regions
+(global-set-key [C-M-up] 'move-text-up)
+(global-set-key [C-M-down] 'move-text-down)
 
 
 ;; Textmate-like M-RET

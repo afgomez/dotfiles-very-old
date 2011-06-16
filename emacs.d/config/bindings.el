@@ -12,6 +12,12 @@
 (global-set-key [C-M-up] 'move-text-up)
 (global-set-key [C-M-down] 'move-text-down)
 
+;; Move cursor (mac friendly)
+(global-set-key [M-up] 'beginning-of-buffer)
+(global-set-key [M-down] 'end-of-buffer)
+(global-set-key [M-left] 'beginning-of-line)
+(global-set-key [M-right] 'end-of-line)
+
 ;; Fast buffer/window management
 (global-set-key (kbd "M-k") 'kill-this-buffer)
 (global-set-key (kbd "M-b") 'ido-switch-buffer)

@@ -12,6 +12,9 @@
 (global-set-key [C-M-up] 'move-text-up)
 (global-set-key [C-M-down] 'move-text-down)
 
+;; Fast buffer/window management
+(global-set-key (kbd "M-k") 'kill-this-buffer)
+(global-set-key (kbd "M-b") 'ido-switch-buffer)
 
 ;; Textmate-like M-RET
 (define-key global-map (kbd "RET") 'newline-and-indent)

@@ -29,6 +29,10 @@
 ;; C-k also removes newline char
 (setq kill-whole-line t)
 
+;; Keep custom-variables in another file
+(setq custom-file "~/.emacs.d/custom.el")
+(load custom-file 'noerror)
+
 ;; Ido-mode
 (ido-mode t)
 (setq ido-enable-flex-matching t) ; fuzzy matching is a must have

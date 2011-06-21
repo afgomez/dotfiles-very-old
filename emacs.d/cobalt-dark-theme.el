@@ -4,7 +4,7 @@
 (custom-theme-set-faces
  'cobalt-dark
  '(default ((t (:stipple nil :background "#0b152b" :foreground "#ffffff" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal ))))
- '(cursor ((t (:background "#aa5500"))))
+ '(cursor ((t (:background "#ccc"))))
  '(escape-glyph ((t (:foreground "#7cff7e"))))
  '(highlight ((t (:background "#070D1B"))))
  '(region ((t (:background "#8f6248"))))

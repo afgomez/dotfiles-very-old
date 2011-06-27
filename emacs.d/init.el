@@ -10,3 +10,6 @@
 (load "config/el-get")
 (load "config/bindings")
 (load "config/bookmarks")
+
+(load "textmate")
+(textmate-mode)

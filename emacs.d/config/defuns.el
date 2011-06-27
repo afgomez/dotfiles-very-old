@@ -6,13 +6,6 @@
     (when file
       (find-file file))))
 
-;; Textmate-like M-ret
-(defun tm-next-line ()
-  "Inserts an indented newline after the current line and moves the point to it."
-  (interactive)
-  (end-of-line)
-  (newline-and-indent))
-
 ;; If nothing is selected, kill/copy current line
 (defadvice kill-ring-save (before slick-copy activate compile) "When called
   interactively with no active region, copy a single line instead."

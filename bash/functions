@@ -5,20 +5,38 @@ function c {
 function __colorize_git_ps1 () {
   local branch=$(__git_ps1 "%s")
   if [ -n "$branch" ]; then
-    local color="33"
+    local color="34"
+    
     if [[ $branch == master* ]]; then
-      color="31" #Red
+      color="31" # Red
     fi
     if [[ $branch == dev* ]]; then
-      color="32" #Green
+      color="32" # Green
     fi
     if [[ $branch == features* ]]; then
-      color="36" #Blue
+      color="36" # Cyan
     fi
     if [[ $branch == fix* ]]; then
-      color="35" #Light Red
+      color="35" # Light Red
     fi
 
     printf "[\e[${color}m${branch}\e[0m]"
   fi
+}
+
+# rvm gemset
+# Adapted from http://tammersaleh.com/posts/a-better-rvm-bash-prompt
+function __my_rvm_ruby_version {
+  local gemset=$(echo $GEM_HOME | awk -F'@' '{print $2}')
+  
+  if [[ "$gemset" != "global" ]]; then
+    gemset="@$gemset"
+  else
+    gemset=""
+  fi
+  
+  local version=$(echo $MY_RUBY_HOME | awk -F'-' '{print $2}')
+  [ "$version" == "1.8.7" ] && version=""
+  local full="$version$gemset"
+  [ "$full" != "" ] && printf "[\e[35m${full}\e[0m]"
 }

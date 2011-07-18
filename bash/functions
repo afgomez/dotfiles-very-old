@@ -5,7 +5,7 @@ function c {
 function __colorize_git_ps1 () {
   local branch=$(__git_ps1 "%s")
   if [ -n "$branch" ]; then
-    local color="34"
+    local color="34" # blue
     
     if [[ $branch == master* ]]; then
       color="31" # Red

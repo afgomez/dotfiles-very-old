@@ -20,7 +20,7 @@ function __colorize_git_ps1 () {
       color="35" # Light Red
     fi
 
-    echo "[\[\033[${color}m\]${branch}\[\033[0m\]]"
+    printf "[\e[${color}m${branch}\e[0m]"
   fi
 }
 
@@ -38,5 +38,5 @@ function __my_rvm_ruby_version {
   local version=$(echo $MY_RUBY_HOME | awk -F'-' '{print $2}')
   [ "$version" == "1.8.7" ] && version=""
   local full="$version$gemset"
-  [ "$full" != "" ] && echo "[\[\033[35m\]${full}\[\033[0m\]]"
+  [ "$full" != "" ] && printf "[\e[35m${full}\e[0m]"
 }

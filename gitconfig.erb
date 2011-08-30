@@ -5,15 +5,18 @@
 	co = checkout
 	ci = commit -a
 [color]
-	diff = auto
-	status = auto
-	branch = auto
+	ui = auto
 [core]
 	excludesfile = <%= ENV['HOME'] %>/.gitignore
 	editor = mate -w
 [apply]
 	whitespace = nowarn
-[format]
-	pretty = %C(yellow)%h%Creset %s
 [branch]
 	autosetuprebase = always
+[grep]
+	lineNumber = true
+[log]
+	date = relative
+	decorate = short
+[merge]
+	ff = false

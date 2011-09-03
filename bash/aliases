@@ -2,7 +2,7 @@ alias ..='cd ..'
 
 # ls
 alias ls='ls -FG'
-alias ll='ls -l'
+alias ll='ls -lA'
 alias la='ls -A'
 
 # git

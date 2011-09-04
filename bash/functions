@@ -5,22 +5,22 @@ function c {
 function __colorize_git_ps1 () {
   local branch=$(__git_ps1 "%s")
   if [ -n "$branch" ]; then
-    local color="34" # blue
+    local color="\033[0;33m" # blue
     
     if [[ $branch == master* ]]; then
-      color="31" # Red
+      color="\033[0;31m" # Red
     fi
     if [[ $branch == dev* ]]; then
-      color="32" # Green
+      color="\033[0;32m" # Green
     fi
     if [[ $branch == features* ]]; then
-      color="36" # Cyan
+      color="\033[0;36m" # Cyan
     fi
     if [[ $branch == fix* ]]; then
-      color="35" # Light Red
+      color="\033[0;35m" # Light Red
     fi
 
-    printf "[\e[${color}m${branch}\e[0m]"
+    printf "$color"
   fi
 }
 
@@ -38,5 +38,5 @@ function __my_rvm_ruby_version {
   local version=$(echo $MY_RUBY_HOME | awk -F'-' '{print $2}')
   [ "$version" == "1.8.7" ] && version=""
   local full="$version$gemset"
-  [ "$full" != "" ] && printf "[\e[35m${full}\e[0m]"
+  [ "$full" != "" ] && echo "$full"
 }

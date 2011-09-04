@@ -8,4 +8,4 @@ PROMPT_COMMAND='history -a'
 
 # Prompt
 GIT_PS1_SHOWDIRTYSTATE=t
-PS1='\w$(__my_rvm_ruby_version)$(__colorize_git_ps1)\$ '
+PS1="\$($( cat ~/.bash/my_prompt.sh ))"

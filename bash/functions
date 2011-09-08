@@ -1,42 +1,4 @@
+#!/bin/bash
 function c {
   cd ~/code/$1
-}
-
-function __colorize_git_ps1 () {
-  local branch=$(__git_ps1 "%s")
-  if [ -n "$branch" ]; then
-    local color="\033[0;33m" # blue
-    
-    if [[ $branch == master* ]]; then
-      color="\033[0;31m" # Red
-    fi
-    if [[ $branch == dev* ]]; then
-      color="\033[0;32m" # Green
-    fi
-    if [[ $branch == features* ]]; then
-      color="\033[0;36m" # Cyan
-    fi
-    if [[ $branch == fix* ]]; then
-      color="\033[0;35m" # Light Red
-    fi
-
-    printf "$color"
-  fi
-}
-
-# rvm gemset
-# Adapted from http://tammersaleh.com/posts/a-better-rvm-bash-prompt
-function __my_rvm_ruby_version {
-  local gemset=$(echo $GEM_HOME | awk -F'@' '{print $2}')
-  
-  if [[ "$gemset" != "global" ]]; then
-    gemset="@$gemset"
-  else
-    gemset=""
-  fi
-  
-  local version=$(echo $MY_RUBY_HOME | awk -F'-' '{print $2}')
-  [ "$version" == "1.8.7" ] && version=""
-  local full="$version$gemset"
-  [ "$full" != "" ] && echo "$full"
 }

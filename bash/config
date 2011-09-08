@@ -8,4 +8,4 @@ PROMPT_COMMAND='history -a'
 
 # Prompt
 GIT_PS1_SHOWDIRTYSTATE=t
-export PS1="\w [\[\033[0;35m\]\$(__my_rvm_ruby_version)\[\033[0;0m\]]\[\$(__colorize_git_ps1)\]\$(__git_ps1)\[\033[0;0m\]\$ "
+PS1="\$($( cat ~/.bash/my_prompt.sh ))"

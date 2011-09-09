@@ -24,7 +24,7 @@ fi
 ### Git branchs colorized
 branch=$(__git_ps1 "%s")
  if [ -n "$branch" ]; then
-   color="\033[0;33m" # blue
+   color="\033[0;34m" # blue
    
    if [[ $branch == master* ]]; then
      color="\033[0;31m" # Red

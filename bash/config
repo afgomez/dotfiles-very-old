@@ -1,4 +1,4 @@
-EDITOR="mate -w"
+EDITOR="vim"
 PATH="~/bin:$PATH"
 
 # History stuff

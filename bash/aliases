@@ -27,3 +27,4 @@ alias rst='touch tmp/restart.txt'
 
 # misc
 alias reload='source ~/.bash_profile'
+alias vim='mvim -v'

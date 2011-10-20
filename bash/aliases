@@ -6,8 +6,10 @@ alias ll='ls -lAh'
 alias la='ls -A'
 
 # git
+alias branch="git branch 2>/dev/null | grep '*' | sed 's/\* //'"
 alias gl='git pull'
 alias gp='git push'
+alias gP='git push origin `branch`'
 alias gd='git diff'
 alias gc='git commit'
 alias gca='git commit -a'

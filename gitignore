@@ -3,3 +3,6 @@
 .rvmrc
 *~
 \#*#
+config/setup_load_paths.rb
+*.swp
+tags

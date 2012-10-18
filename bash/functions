@@ -2,3 +2,11 @@
 function c {
   cd ~/code/$1
 }
+function e {
+  if [[ -z $1 ]]; then
+    args='.'
+  else
+    args=$1
+  fi
+  subl -n --command toggle_full_screen $args
+}

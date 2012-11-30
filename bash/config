@@ -1,5 +1,5 @@
 EDITOR="vim"
-PATH="~/bin:$PATH"
+PATH="~/bin:/usr/local/bin:$PATH"
 
 # History stuff
 export HISTCONTROL=ignoreboth

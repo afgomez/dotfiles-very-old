@@ -1,8 +1,11 @@
 .DS_Store
 .svn
 .rvmrc
+.rbenv-*
 *~
 \#*#
 config/setup_load_paths.rb
 *.swp
 tags
+.tags*
+.bundle

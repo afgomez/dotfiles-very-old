@@ -1,4 +1,4 @@
-EDITOR="vim"
+EDITOR="subl -n -w"
 PATH="~/bin:/usr/local/bin:$PATH"
 
 # History stuff

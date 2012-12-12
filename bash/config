@@ -6,6 +6,9 @@ export HISTCONTROL=ignoreboth
 shopt -s histappend
 PROMPT_COMMAND='history -a'
 
+# Change the locale for bash messages
+export LC_MESSAGES="en_US.UTF-8"
+
 # Prompt
 GIT_PS1_SHOWDIRTYSTATE=t
 PS1="\$($( cat ~/.bash/my_prompt.sh ))"

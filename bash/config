@@ -12,3 +12,7 @@ export LC_MESSAGES="en_US.UTF-8"
 # Prompt
 GIT_PS1_SHOWDIRTYSTATE=t
 PS1="\$($( cat ~/.bash/my_prompt.sh ))"
+
+# Todo.txt
+export TODOTXT_DEFAULT_ACTION=ls
+complete -F _todo t # Provide autocompletion to the "t" alias

@@ -27,7 +27,6 @@ alias rst='touch tmp/restart.txt'
 
 # Todo.txt
 alias t='todo.sh'
-complete -F _todo t # Provide autocompletion to the "t" alias
 
 # misc
 alias reload='source ~/.bash_profile'

@@ -6,9 +6,6 @@ alias ll='ls -l'
 alias la='ls -A'
 
 # git
-alias gl='git pull'
-alias gp='git push'
-alias gP='git push origin `git branch 2>/dev/null | grep "*" | sed "s/\* //"`'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias gsmu="git submodule update --init"
 

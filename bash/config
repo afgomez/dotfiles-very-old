@@ -1,4 +1,4 @@
-EDITOR="subl -n -w"
+export EDITOR="subl -n -w"
 PATH="~/bin:/usr/local/bin:$PATH"
 
 # History stuff

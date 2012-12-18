@@ -9,12 +9,6 @@ alias la='ls -A'
 alias gl='git pull'
 alias gp='git push'
 alias gP='git push origin `git branch 2>/dev/null | grep "*" | sed "s/\* //"`'
-alias gd='git diff'
-alias gc='git commit'
-alias gca='git commit -a'
-alias gco='git checkout'
-alias gb='git branch'
-alias gs='git status'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias gsmu="git submodule update --init"
 

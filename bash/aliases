@@ -21,3 +21,4 @@ alias t='todo.sh'
 
 # misc
 alias reload='source ~/.bash_profile'
+alias server='python -m SimpleHTTPServer'

@@ -1,5 +1,5 @@
 export EDITOR="subl -n -w"
-PATH="~/bin:/usr/local/bin:$PATH"
+PATH="~/bin:/usr/local/share/npm/bin:/usr/local/bin:$PATH"
 
 # History stuff
 export HISTCONTROL=ignoreboth

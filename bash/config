@@ -3,9 +3,9 @@ PATH="~/bin:/usr/local/share/npm/bin:/usr/local/bin:$PATH"
 
 # History stuff
 export HISTCONTROL=ignoreboth
-HISTSIZE=1000
+export HISTSIZE=1000
 shopt -s histappend
-PROMPT_COMMAND='history -a'
+export PROMPT_COMMAND='history -a'
 
 # Change the locale for bash messages
 export LC_MESSAGES="en_US.UTF-8"

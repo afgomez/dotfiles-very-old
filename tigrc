@@ -1,0 +1,18 @@
+set read-git-colors = yes
+
+# View options
+set show-date = short
+set author-width = 15
+set show-id = yes
+set id-width = 8
+set line-graphics = yes
+set show-refs = yes
+set show-rev-graph = yes
+
+# In case someone uses tabs, show them nicely
+set tab-size = 2
+
+# Show commit SHA
+
+# Yank commit SHA into the system clipboard
+bind generic y !@bash -c "echo -n %(commit) | pbcopy"

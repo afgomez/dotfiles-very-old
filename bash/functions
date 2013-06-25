@@ -1,8 +1,14 @@
 #!/bin/bash
+
+# Go to project inside the code directory
 function c {
   cd ~/code/$1
 }
+
+# Open sublime text with full_screen by default
 function e {
+
+  # If there's no arguments use current folder
   if [[ -z $1 ]]; then
     args='.'
   else

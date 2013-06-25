@@ -14,5 +14,17 @@ function e {
   else
     args=$1
   fi
+
   subl -n --command toggle_full_screen $args
+}
+
+# Change the iterm2 profile programatically
+function iterm_profile {
+  if [[ -z $1 ]]; then
+    profile="Default"
+  else
+    profile=$1
+  fi
+
+  echo -e "\033]50;SetProfile=$profile\a"
 }

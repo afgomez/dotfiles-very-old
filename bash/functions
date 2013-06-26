@@ -26,5 +26,5 @@ function iterm_profile {
     profile=$1
   fi
 
-  echo -e "\033]50;SetProfile=$profile\a"
+  echo -ne "\033]50;SetProfile=$profile\a"
 }

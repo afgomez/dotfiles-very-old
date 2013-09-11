@@ -14,6 +14,8 @@
 	unignore = update-index --no-assume-unchanged
 	ignored = !git ls-files -v | grep "^[[:lower:]]"
 
+	standup = !"git log --decorate --reverse --branches --since=$(if [[ "Mon" == "$(date +%a)" ]]; then echo "last friday"; else echo "yesterday"; fi) --author=$(git config --get user.email) --format=format:'%C(yellow)%h|%C(green)%ad%Creset|%s' --date=local | column -t -s '|'"
+
 [color]
 	ui = auto
 [core]

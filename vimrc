@@ -24,6 +24,9 @@ set backspace=indent,eol,start  " Allow backspacing over everything
 " Interface stuff
 " ---------------------------------------------------------------------------
 syntax on            " Color all the things!
+set t_Co=256         " With all the colors in the world!
+color vimcobalt      " And use a beautiful theme!
+
 set cmdheight=2      " I like high command status
 set laststatus=2     " Show last command
 set number           " Line numbers are cool

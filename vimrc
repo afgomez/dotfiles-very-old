@@ -9,6 +9,7 @@ call vundle#rc()
 
 " let Vundle manage Vundle
 Bundle 'gmarik/vundle'
+Bundle 'kien/ctrlp.vim'
 
 filetype plugin indent on
 

@@ -12,6 +12,7 @@ Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
 Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-fugitive'
+Bundle 'scrooloose/syntastic'
 
 " Ruby on Rails stuff
 Bundle 'vim-ruby/vim-ruby'

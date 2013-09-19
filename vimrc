@@ -12,6 +12,10 @@ Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
 Bundle 'bling/vim-airline'
 
+" Ruby on Rails stuff
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'tpope/vim-rails'
+
 filetype plugin indent on
 
 

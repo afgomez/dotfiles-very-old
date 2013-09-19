@@ -14,7 +14,11 @@ Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/syntastic'
 
+" Helps debugging colorschemes
 Bundle 'gerw/vim-HiLinkTrace'
+
+" Add `end` to certain languages blocks
+Bundle 'tpope/vim-endwise'
 
 " Ruby on Rails stuff
 Bundle 'vim-ruby/vim-ruby'

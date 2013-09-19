@@ -11,6 +11,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
 Bundle 'bling/vim-airline'
+Bundle 'tpope/vim-fugitive'
 
 " Ruby on Rails stuff
 Bundle 'vim-ruby/vim-ruby'

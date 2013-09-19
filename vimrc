@@ -14,6 +14,8 @@ Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/syntastic'
 
+Bundle 'gerw/vim-HiLinkTrace'
+
 " Ruby on Rails stuff
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'

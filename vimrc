@@ -41,6 +41,7 @@ set cmdheight=2      " I like high command status
 set laststatus=2     " Show last command
 set number           " Line numbers are cool
 set cursorline       " Show me where I am
+set colorcolumn=80   " To write code @rochgs ready
 
 " Show hidden characters
 set list

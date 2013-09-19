@@ -38,6 +38,10 @@ set laststatus=2     " Show last command
 set number           " Line numbers are cool
 set cursorline       " Show me where I am
 
+" Show hidden characters
+set list
+set listchars=tab:▸\ ,eol:¬ " Use textmate invisible characters
+
 
 " Coding stuff
 " ---------------------------------------------------------------------------

@@ -10,6 +10,7 @@ call vundle#rc()
 " let Vundle manage Vundle
 Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
+Bundle 'bling/vim-airline'
 
 filetype plugin indent on
 
@@ -41,3 +42,10 @@ set shiftwidth=2 softtabstop=2 expandtab
 
 set autoindent     " Indent
 set smartindent    " Be smart about it
+
+
+" Kitchen sink stuff
+" ---------------------------------------------------------------------------
+
+" Airline pretty symbols
+" let g:airline_powerline_fonts = 1

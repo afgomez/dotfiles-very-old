@@ -21,6 +21,9 @@ Bundle 'gerw/vim-HiLinkTrace'
 Bundle 'tpope/vim-endwise'
 Bundle 'jiangmiao/auto-pairs'
 
+" Extend % for HTML
+Bundle 'tsaleh/vim-matchit'
+
 " Ruby on Rails stuff
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'

@@ -41,6 +41,8 @@ set backspace=indent,eol,start  " Allow backspacing over everything
 set hidden      " Don't complain when switching unsaved buffers
 set visualbell  " STFU Vim!
 
+set autoread    " re-read a file if it has a different timestamp
+
 set selection=exclusive    " Don't include the character under the cursor in
                            " selection
 

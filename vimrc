@@ -35,6 +35,7 @@ set clipboard=unnamed           " Use system clipboard
 set mouse=a                     " Enable mouse scrolling
 set backspace=indent,eol,start  " Allow backspacing over everything
 
+set hidden      " Don't complain when switching unsaved buffers
 " Searchs
 "
 set hlsearch      " Highlight search results"

@@ -37,6 +37,10 @@ set backspace=indent,eol,start  " Allow backspacing over everything
 
 set hidden      " Don't complain when switching unsaved buffers
 set visualbell  " STFU Vim!
+
+set selection=exclusive    " Don't include the character under the cursor in
+                           " selection
+
 " Searchs
 "
 set hlsearch      " Highlight search results"

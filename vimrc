@@ -13,15 +13,13 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/syntastic'
-
+Bundle 'szw/vim-tags'
 " Helps debugging colorschemes
 Bundle 'gerw/vim-HiLinkTrace'
 
 " Syntax helpers
 Bundle 'tpope/vim-endwise'
 Bundle 'jiangmiao/auto-pairs'
-
-" Extend % for HTML
 Bundle 'tsaleh/vim-matchit'
 
 " Ruby on Rails stuff

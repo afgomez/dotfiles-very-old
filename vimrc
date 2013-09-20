@@ -46,6 +46,10 @@ set autoread    " re-read a file if it has a different timestamp
 set selection=exclusive    " Don't include the character under the cursor in
                            " selection
 
+" Splits
+"
+set splitright
+set splitbelow
 " Searchs
 "
 set hlsearch      " Highlight search results"

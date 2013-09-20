@@ -66,6 +66,7 @@ hi  rubyInterpolation           ctermfg=120  ctermbg=NONE  cterm=NONE     guifg=
 hi  rubyInterpolationDelimiter  ctermfg=120  ctermbg=NONE  guifg=#9eff80  guibg=NONE     gui=NONE
 hi  rubyInstanceVariable        ctermfg=249  ctermbg=NONE  cterm=NONE     guifg=#bbbbbb  guibg=NONE  gui=NONE
 hi  rubyClassVariable           ctermfg=249  ctermbg=NONE  cterm=NONE     guifg=#bbbbbb  guibg=NONE  gui=NONE
+hi  rubyBlockParameter          ctermfg=249  ctermbg=NONE  cterm=NONE     guifg=#bbbbbb  guibg=NONE  gui=NONE
 hi  rubyConstant                ctermfg=121  ctermbg=NONE  cterm=NONE     guifg=#80ffbb  guibg=NONE  gui=NONE
 hi  rubyClassDeclaration        ctermfg=220  ctermbg=NONE  cterm=NONE     guifg=#ffdd00  guibg=NONE  gui=NONE
 

@@ -56,6 +56,9 @@ set number           " Line numbers are cool
 set cursorline       " Show me where I am
 set colorcolumn=80   " To write code @rochgs ready
 
+set scrolloff=5      " Show some context when scrolling pages
+
+
 " Show hidden characters
 set list
 set listchars=tab:▸\ ,eol:¬ " Use textmate invisible characters

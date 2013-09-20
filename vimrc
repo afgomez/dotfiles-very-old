@@ -50,13 +50,10 @@ set selection=exclusive    " Don't include the character under the cursor in
 autocmd BufLeave,FocusLost * silent! wall
 
 " Splits
-"
 set splitright      " Vertical splits to the right
 " set splitbelow    " Horizontal splits below
 
-
 " Searchs
-"
 set hlsearch      " Highlight search results"
 set incsearch     " ...dynamically as they are typed.
 set smartcase     " Insensitive case unless there are some uppercase letters

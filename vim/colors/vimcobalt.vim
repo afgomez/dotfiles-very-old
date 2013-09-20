@@ -75,3 +75,4 @@ hi  erubyComment    ctermfg=26  ctermbg=NONE  cterm=NONE  guifg=#0066cc  guibg=N
 " Rails specific
 "
 hi railsMethod ctermfg=215 ctermbg=NONE cterm=NONE guifg=#ffb054 guibg=NONE gui=NONE
+hi erubyRailsUserClass ctermfg=121  ctermbg=NONE  cterm=NONE     guifg=#80ffbb  guibg=NONE  gui=NONE

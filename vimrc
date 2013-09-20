@@ -96,8 +96,12 @@ set autoindent     " Indent
 set smartindent    " Be smart about it
 
 
-" Kitchen sink stuff
+" Kitchen sink
 " ---------------------------------------------------------------------------
 
 " Airline pretty symbols
 " let g:airline_powerline_fonts = 1
+
+" Syntastic stuff
+let g:syntastic_warning_symbol = '⚠'
+let g:syntastic_error_symbol   = '✖'

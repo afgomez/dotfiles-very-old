@@ -36,6 +36,7 @@ set mouse=a                     " Enable mouse scrolling
 set backspace=indent,eol,start  " Allow backspacing over everything
 
 set hidden      " Don't complain when switching unsaved buffers
+set visualbell  " STFU Vim!
 " Searchs
 "
 set hlsearch      " Highlight search results"

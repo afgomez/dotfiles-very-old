@@ -14,6 +14,8 @@ Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/syntastic'
 Bundle 'szw/vim-tags'
+" Needed to enable autosave under iTerm2
+Bundle 'sjl/vitality.vim'
 " Helps debugging colorschemes
 Bundle 'gerw/vim-HiLinkTrace'
 
@@ -43,6 +45,9 @@ set autoread    " re-read a file if it has a different timestamp
 
 set selection=exclusive    " Don't include the character under the cursor in
                            " selection
+
+" Save files when focus is lost
+autocmd BufLeave,FocusLost * silent! wall
 
 " Splits
 "

@@ -50,6 +50,14 @@ hi DiffDelete  ctermfg=88  ctermbg=NONE  cterm=NONE  guifg=#850409  guibg=NONE  
 hi DiffChange  ctermfg=15  ctermbg=23    cterm=NONE  guifg=#ffffff  guibg=#143059  gui=NONE
 hi DiffText    ctermfg=15  ctermbg=24    cterm=bold  guifg=#ffffff  guibg=#204a87  gui=bold
 
+" Syntastic specific
+"
+hi  SyntasticError        ctermfg=16    ctermbg=160   cterm=NONE  guifg=NONE     guibg=#CC0000  gui=NONE
+hi  SyntasticWarning      ctermfg=16    ctermbg=166   cterm=NONE  guifg=NONE     guibg=#CC0000  gui=NONE
+hi  SyntasticErrorSign    ctermfg=160   ctermbg=NONE  cterm=NONE  guifg=#cc0000  guibg=NONE     gui=NONE
+hi  SyntasticWarningSign  ctermfg=220   ctermbg=NONE  cterm=NONE  guifg=#ff9900  guibg=NONE     gui=NONE
+hi  SyntasticErrorLine    ctermfg=NONE  ctermbg=52    cterm=NONE  guifg=NONE     guibg=#990000  gui=NONE
+hi  SyntasticWarningLine  ctermfg=NONE  ctermbg=52    cterm=NONE  guifg=NONE     guibg=#990000  gui=NONE
 
 " HTML specific
 "

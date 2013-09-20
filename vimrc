@@ -35,6 +35,12 @@ set clipboard=unnamed           " Use system clipboard
 set mouse=a                     " Enable mouse scrolling
 set backspace=indent,eol,start  " Allow backspacing over everything
 
+" Searchs
+"
+set hlsearch      " Highlight search results"
+set incsearch     " ...dynamically as they are typed.
+set smartcase     " Insensitive case unless there are some uppercase letters
+
 
 " Interface stuff
 " ---------------------------------------------------------------------------

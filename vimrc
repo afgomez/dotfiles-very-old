@@ -62,6 +62,10 @@ set smartcase     " Insensitive case unless there are some uppercase letters
 set nobackup
 set noswapfile
 
+" Wrap stuff
+set nowrap
+nmap j gj
+nmap k gk
 
 " Interface stuff
 " ---------------------------------------------------------------------------

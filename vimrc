@@ -17,8 +17,9 @@ Bundle 'scrooloose/syntastic'
 " Helps debugging colorschemes
 Bundle 'gerw/vim-HiLinkTrace'
 
-" Add `end` to certain languages blocks
+" Syntax helpers
 Bundle 'tpope/vim-endwise'
+Bundle 'jiangmiao/auto-pairs'
 
 " Ruby on Rails stuff
 Bundle 'vim-ruby/vim-ruby'

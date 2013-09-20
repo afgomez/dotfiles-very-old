@@ -46,8 +46,10 @@ set selection=exclusive    " Don't include the character under the cursor in
 
 " Splits
 "
-set splitright
-set splitbelow
+set splitright      " Vertical splits to the right
+" set splitbelow    " Horizontal splits below
+
+
 " Searchs
 "
 set hlsearch      " Highlight search results"

@@ -25,16 +25,17 @@ hi  Visual        ctermfg=NONE   ctermbg=237   cterm=NONE  guifg=NONE     guibg=
 
 " General coding colors
 "
-hi  Constant     ctermfg=204  ctermbg=NONE  cterm=NONE  guifg=#ff628c  guibg=NONE  gui=NONE
-hi  String       ctermfg=76   ctermbg=NONE  cterm=NONE  guifg=#3ad900  guibg=NONE  gui=NONE
-hi  Function     ctermfg=220  ctermbg=NONE  cterm=NONE  guifg=#ffdd00  guibg=NONE  gui=NONE
-hi  Keyword      ctermfg=208  ctermbg=NONE  cterm=NONE  guifg=#ff9d00  guibg=NONE  gui=NONE
-hi  Define       ctermfg=208  ctermbg=NONE  cterm=NONE  guifg=#ff9d00  guibg=NONE  gui=NONE
-hi  Conditional  ctermfg=208  ctermbg=NONE  cterm=NONE  guifg=#ff9d00  guibg=NONE  gui=NONE
-hi  Operator     ctermfg=208  ctermbg=NONE  cterm=NONE  guifg=#ff9d00  guibg=NONE  gui=NONE
-hi  Statement    ctermfg=208  ctermbg=NONE  cterm=NONE  guifg=#ff9d00  guibg=NONE  gui=NONE
-hi  PreProc      ctermfg=208  ctermbg=NONE  cterm=NONE  guifg=#ff9d00  guibg=NONE  gui=NONE
-hi  Type         ctermfg=220  ctermbg=NONE  cterm=NONE  guifg=#ffdd00  guibg=NONE  gui=NONE
+hi  Constant      ctermfg=204    ctermbg=NONE  cterm=NONE  guifg=#ff628c  guibg=NONE  gui=NONE
+hi  String        ctermfg=76     ctermbg=NONE  cterm=NONE  guifg=#3ad900  guibg=NONE  gui=NONE
+hi  Function      ctermfg=220    ctermbg=NONE  cterm=NONE  guifg=#ffdd00  guibg=NONE  gui=NONE
+hi  Keyword       ctermfg=208    ctermbg=NONE  cterm=NONE  guifg=#ff9d00  guibg=NONE  gui=NONE
+hi  Define        ctermfg=208    ctermbg=NONE  cterm=NONE  guifg=#ff9d00  guibg=NONE  gui=NONE
+hi  Conditional   ctermfg=208    ctermbg=NONE  cterm=NONE  guifg=#ff9d00  guibg=NONE  gui=NONE
+hi  Operator      ctermfg=208    ctermbg=NONE  cterm=NONE  guifg=#ff9d00  guibg=NONE  gui=NONE
+hi  Statement     ctermfg=208    ctermbg=NONE  cterm=NONE  guifg=#ff9d00  guibg=NONE  gui=NONE
+hi  PreProc       ctermfg=208    ctermbg=NONE  cterm=NONE  guifg=#ff9d00  guibg=NONE  gui=NONE
+hi  Type          ctermfg=220    ctermbg=NONE  cterm=NONE  guifg=#ffdd00  guibg=NONE  gui=NONE
+hi  StorageClass  ctermfg=221    ctermbg=NONE  cterm=NONE  guifg=#ffee80  guibg=NONE  gui=NONE
 
 hi  Number  ctermfg=204  ctermbg=NONE  cterm=NONE  guifg=#ff628c  guibg=NONE  gui=NONE
 hi  Float   ctermfg=204  ctermbg=NONE  cterm=NONE  guifg=#ff628c  guibg=NONE  gui=NONE

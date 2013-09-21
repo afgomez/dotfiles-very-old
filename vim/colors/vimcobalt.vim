@@ -70,6 +70,31 @@ hi  htmlTagName  ctermfg=123  ctermbg=NONE  cterm=NONE  guifg=#9effff  guibg=NON
 hi  htmlArg      ctermfg=123  ctermbg=NONE  cterm=NONE  guifg=#9effff  guibg=NONE  gui=NONE
 
 
+" CSS/SASS
+"
+hi  cssBraces     ctermfg=15   ctermbg=NONE  cterm=NONE  guifg=NONE     guibg=NONE  gui=NONE
+hi  cssClassName  ctermfg=77   ctermbg=NONE  cterm=NONE  guifg=#5fe460  guibg=NONE  gui=NONE
+hi  cssProp       ctermfg=121  ctermbg=NONE  cterm=NONE  guifg=#80ffbb  guibg=NONE  gui=NONE
+hi  cssImportant  ctermfg=160  ctermbg=NONE  cterm=NONE  guifg=#CC0000  guibg=NONE  gui=NONE
+hi  cssVendor     ctermfg=160  ctermbg=NONE  cterm=NONE  guifg=#CC0000  guibg=NONE  gui=NONE
+hi  link  cssUnitDecorators  Keyword
+hi  link  cssTagName         htmlTag
+hi  link  cssIdentifier      Keyword
+hi  link  cssFontDescriptor  Keyword
+hi  link  cssFunctionName    Keyword
+hi  link  cssPseudoClassId   Type
+hi  link  cssAttr            StorageClass
+hi  link  cssValueLength     cssAttr
+hi  link  cssValueNumber     cssAttr
+hi  link  cssColor           cssAttr
+
+hi sassVariable ctermfg=249 ctermbg=NONE cterm=NONE guifg=#BBBBBB guibg=NONE gui=NONE
+hi  link  sassMixinName  Type
+hi  link  sassClassChar  sassClass
+hi  link  sassClass      cssClassName
+hi  link  sassAmpersand  Keyword
+
+
 " Javascript specific
 "
 hi link jsThis Constant

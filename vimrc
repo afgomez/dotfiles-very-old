@@ -36,6 +36,7 @@ Bundle 'tpope/vim-rails'
 
 " HTML/CSS/SASS...
 Bundle 'othree/html5.vim'
+Bundle 'JulesWang/css.vim'
 
 " Javascript
 Bundle 'pangloss/vim-javascript'

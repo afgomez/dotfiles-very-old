@@ -24,9 +24,12 @@ Bundle 'tpope/vim-endwise'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'tsaleh/vim-matchit'
 
-" Ruby on Rails stuff
+" Ruby on Rails
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
+
+" HTML/CSS/SASS...
+Bundle 'othree/html5.vim'
 
 " Javascript
 Bundle 'pangloss/vim-javascript'

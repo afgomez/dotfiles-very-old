@@ -58,6 +58,9 @@ set hlsearch      " Highlight search results"
 set incsearch     " ...dynamically as they are typed.
 set smartcase     " Insensitive case unless there are some uppercase letters
 
+" Clear search highlight when done searching
+nnoremap <CR> :noh<CR><CR>
+
 " Live dangerously
 set nobackup
 set noswapfile

@@ -18,8 +18,8 @@ hi  LineNr        ctermfg=102    ctermbg=NONE  cterm=NONE  guifg=#364350  guibg=
 hi  SignColumn    ctermfg=102    ctermbg=NONE  cterm=NONE  guifg=#364350  guibg=#10182a  gui=NONE
 hi  CursorLine    ctermfg=none   ctermbg=234   cterm=NONE  guifg=NONE     guibg=#030711  gui=NONE
 hi  CursorLineNr  ctermfg=white  ctermbg=234   cterm=NONE  guifg=#364350  guibg=#090e18
-hi  CursorColumn  ctermfg=NONE   ctermbg=17    cterm=NONE  guifg=#fabada  guibg=#212d40  gui=NONE
-hi  ColorColumn   ctermfg=NONE   ctermbg=233   cterm=NONE  guifg=#fabada  guibg=#151c2e  gui=NONE
+hi  CursorColumn  ctermfg=NONE   ctermbg=17    cterm=NONE  guifg=NONE     guibg=#212d40  gui=NONE
+hi  ColorColumn   ctermfg=NONE   ctermbg=233   cterm=NONE  guifg=NONE     guibg=#151c2e  gui=NONE
 hi  Visual        ctermfg=NONE   ctermbg=237   cterm=NONE  guifg=NONE     guibg=#533121  gui=NONE
 
 

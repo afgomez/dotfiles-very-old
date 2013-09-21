@@ -14,6 +14,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-ragtag'
 Bundle 'kien/ctrlp.vim'
+Bundle 'ivalkeen/vim-ctrlp-tjump'
 Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-fugitive'
 Bundle 'scrooloose/syntastic'
@@ -115,6 +116,12 @@ set smartindent    " Be smart about it
 
 " Kitchen sink
 " ---------------------------------------------------------------------------
+
+" CTRL-P extensions/options
+" let g:ctrlp_extensions = ['tag']
+" Better :tjump
+nnoremap <c-]> :CtrlPtjump<cr>
+vnoremap <c-]> :CtrlPtjumpVisual<cr>
 
 " Airline pretty symbols
 " let g:airline_powerline_fonts = 1

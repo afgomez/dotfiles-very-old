@@ -140,3 +140,7 @@ hi link  yamlKeyValueDelimiter  Type
 hi link  yamlBlockMappingKey    Type
 hi link  yamlBlockMappingMerge  Keyword
 hi link  yamlPlainScalar        String
+
+" Ctrl-P colors
+"
+hi CtrlPTabExtra ctermfg=15 ctermbg=NONE cterm=NONE

@@ -93,7 +93,7 @@ hi  rubyConstant                ctermfg=121  ctermbg=NONE  cterm=NONE     guifg=
 hi  rubyClassDeclaration        ctermfg=220  ctermbg=NONE  cterm=NONE     guifg=#ffdd00  guibg=NONE  gui=NONE
 
 hi  erubyDelimiter  ctermfg=15  ctermbg=NONE  cterm=NONE  guifg=#e1efff  guibg=NONE  gui=NONE
-hi  erubyComment    ctermfg=26  ctermbg=NONE  cterm=NONE  guifg=#0066cc  guibg=NONE  gui=italic
+hi link erubyComment Comment
 
 " Rails specific
 "

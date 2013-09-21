@@ -28,6 +28,10 @@ Bundle 'tsaleh/vim-matchit'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
 
+" Javascript
+Bundle 'pangloss/vim-javascript'
+Bundle 'othree/javascript-libraries-syntax.vim'
+
 filetype plugin indent on
 
 

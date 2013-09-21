@@ -68,6 +68,18 @@ hi  htmlTagName  ctermfg=123  ctermbg=NONE  cterm=NONE  guifg=#9effff  guibg=NON
 hi  htmlArg      ctermfg=123  ctermbg=NONE  cterm=NONE  guifg=#9effff  guibg=NONE  gui=NONE
 
 
+" Javascript specific
+"
+hi link jsThis Constant
+hi link jsPrototype Constant
+hi link jsNull Constant
+hi link jsUndefined Constant
+hi link jsFunction StorageClass
+hi link jsDocTags Todo
+hi link javascriptunderscore Keyword
+hi link javascriptjQuery Keyword
+hi jsGlobalObjects ctermfg=121 ctermbg=NONE cterm=NONE guifg=#80ffbb guibg=NONE gui=NONE
+
 " Ruby specific
 "
 hi  rubySymbol                  ctermfg=204  ctermbg=NONE  cterm=NONE     guifg=#ff628c  guibg=NONE  gui=NONE

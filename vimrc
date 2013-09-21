@@ -22,6 +22,8 @@ Bundle 'szw/vim-tags'
 Bundle 'sjl/vitality.vim'
 " Helps debugging colorschemes
 Bundle 'gerw/vim-HiLinkTrace'
+" Whitespace is a bitch
+Bundle 'mmozuras/vim-whitespace'
 
 " Syntax helpers
 Bundle 'tpope/vim-endwise'

@@ -126,3 +126,13 @@ hi link erubyComment Comment
 "
 hi railsMethod ctermfg=215 ctermbg=NONE cterm=NONE guifg=#ffb054 guibg=NONE gui=NONE
 hi erubyRailsUserClass ctermfg=121  ctermbg=NONE  cterm=NONE     guifg=#80ffbb  guibg=NONE  gui=NONE
+
+
+" YAML colors
+"
+hi link yamlAnchor StorageClass
+hi link yamlAlias StorageClass
+hi link yamlKeyValueDelimiter Type
+hi link yamlBlockMappingKey Type
+hi link yamlBlockMappingMerge Keyword
+hi link yamlPlainScalar String

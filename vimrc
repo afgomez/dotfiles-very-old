@@ -123,15 +123,18 @@ let ruby_operators=1
 " Fast switch between files
 nnoremap <leader><leader> <c-^>
 
+" CTRL-P extensions/options
+let g:ctrlp_map = '<Leader>gf'
+let g:ctrlp_match_window = 'results:30'
+" let g:ctrlp_extensions = ['tag']
+
+
 " Rails Gotofiles
 map <Leader>gv :CtrlP app/views<CR>
 map <Leader>gm :CtrlP app/models<CR>
 map <Leader>gc :CtrlP app/controllers<CR>
 map <Leader>ga :CtrlP app/assets<CR>
 
-" CTRL-P extensions/options
-let g:ctrlp_match_window = 'results:30'
-" let g:ctrlp_extensions = ['tag']
 
 " Better :tjump
 nnoremap <c-]> :CtrlPtjump<cr>

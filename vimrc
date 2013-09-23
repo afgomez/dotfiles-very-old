@@ -117,6 +117,9 @@ set smartindent    " Be smart about it
 " Kitchen sink
 " ---------------------------------------------------------------------------
 
+" Fast switch between files
+nnoremap <leader><leader> <c-^>
+
 " CTRL-P extensions/options
 " let g:ctrlp_extensions = ['tag']
 " Better :tjump

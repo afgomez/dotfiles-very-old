@@ -118,6 +118,11 @@ set smartindent    " Be smart about it
 " Kitchen sink
 " ---------------------------------------------------------------------------
 
+" Emacs line movements in insert mode
+imap <C-e> <C-o>$
+imap <C-a> <C-o>0
+imap <C-k> <C-o>d$
+
 " Highlight ruby operators
 let ruby_operators=1
 

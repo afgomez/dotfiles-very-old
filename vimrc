@@ -120,6 +120,12 @@ set smartindent    " Be smart about it
 " Fast switch between files
 nnoremap <leader><leader> <c-^>
 
+" Rails Gotofiles
+map <Leader>gv :CtrlP app/views<CR>
+map <Leader>gm :CtrlP app/models<CR>
+map <Leader>gc :CtrlP app/controllers<CR>
+map <Leader>ga :CtrlP app/assets<CR>
+
 " CTRL-P extensions/options
 " let g:ctrlp_extensions = ['tag']
 " Better :tjump

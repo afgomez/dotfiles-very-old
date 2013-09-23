@@ -127,7 +127,9 @@ map <Leader>gc :CtrlP app/controllers<CR>
 map <Leader>ga :CtrlP app/assets<CR>
 
 " CTRL-P extensions/options
+let g:ctrlp_match_window = 'results:30'
 " let g:ctrlp_extensions = ['tag']
+
 " Better :tjump
 nnoremap <c-]> :CtrlPtjump<cr>
 vnoremap <c-]> :CtrlPtjumpVisual<cr>

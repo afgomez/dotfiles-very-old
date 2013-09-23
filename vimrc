@@ -117,6 +117,9 @@ set smartindent    " Be smart about it
 " Kitchen sink
 " ---------------------------------------------------------------------------
 
+" Highlight ruby operators
+let ruby_operators=1
+
 " Fast switch between files
 nnoremap <leader><leader> <c-^>
 

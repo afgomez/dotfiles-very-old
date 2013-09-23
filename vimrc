@@ -71,6 +71,7 @@ set splitright      " Vertical splits to the right
 " Searchs
 set hlsearch      " Highlight search results"
 set incsearch     " ...dynamically as they are typed.
+set ignorecase    " Don't care about case
 set smartcase     " Insensitive case unless there are some uppercase letters
 
 " Clear search highlight when done searching

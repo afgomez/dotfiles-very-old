@@ -100,6 +100,8 @@ set colorcolumn=80   " To write code @rochgs ready
 
 set scrolloff=5      " Show some context when scrolling pages
 
+" Remove the mode indicator (we are showing it with airline)
+set noshowmode
 
 " Show hidden characters
 set list

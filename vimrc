@@ -107,6 +107,8 @@ set noshowmode
 set list
 set listchars=tab:▸\ ,eol:¬ " Use textmate invisible characters
 
+" Remove delay in vim-airline when leaving insert mode
+set ttimeoutlen=50
 
 " Coding stuff
 " ---------------------------------------------------------------------------

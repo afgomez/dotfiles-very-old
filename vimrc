@@ -146,7 +146,8 @@ map <Leader>ga :CtrlP app/assets<CR>
 nnoremap <c-]> :CtrlPtjump<cr>
 vnoremap <c-]> :CtrlPtjumpVisual<cr>
 
-" Airline pretty symbols
+" Airline stuff
+let g:airline_theme = "powerlineish"
 " let g:airline_powerline_fonts = 1
 
 " Syntastic stuff

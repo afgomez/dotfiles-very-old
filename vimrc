@@ -101,7 +101,6 @@ color vimcobalt      " And use a beautiful theme!
 
 set cmdheight=2      " I like high command status
 set laststatus=2     " Show last command
-set number           " Line numbers are cool
 set cursorline       " Show me where I am
 set colorcolumn=80   " To write code @rochgs ready
 
@@ -116,6 +115,13 @@ set listchars=tab:▸\ ,eol:¬ " Use textmate invisible characters
 
 " Remove delay in vim-airline when leaving insert mode
 set ttimeoutlen=50
+
+" Line numbers
+set number
+
+" Toggle absolute and relative line numbers (useful for motions)
+map <C-l> :set relativenumber!<CR>
+imap <C-l> <C-o>:set relativenumber!<CR>
 
 " Coding stuff
 " ---------------------------------------------------------------------------

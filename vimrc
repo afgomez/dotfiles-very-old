@@ -86,6 +86,13 @@ set nowrap
 nmap j gj
 nmap k gk
 
+" Learn vim the hard way
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
+
 " Interface stuff
 " ---------------------------------------------------------------------------
 syntax on            " Color all the things!

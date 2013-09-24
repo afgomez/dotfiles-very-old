@@ -1,4 +1,4 @@
-export EDITOR="subl -n -w"
+export EDITOR="vim"
 PATH="~/bin:/usr/local/share/npm/bin:/usr/local/bin:$PATH"
 
 # History stuff

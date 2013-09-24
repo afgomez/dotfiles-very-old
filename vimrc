@@ -9,6 +9,8 @@ call vundle#rc()
 
 " let Vundle manage Vundle
 Bundle 'gmarik/vundle'
+Bundle 'vim-scripts/YankRing.vim'
+Bundle 'sjl/gundo.vim'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
@@ -127,6 +129,7 @@ set number
 map <C-l> :set relativenumber!<CR>
 imap <C-l> <C-o>:set relativenumber!<CR>
 
+
 " Coding stuff
 " ---------------------------------------------------------------------------
 set tabstop=8     " If there's some mixed indentation I wanna see it
@@ -182,3 +185,6 @@ let g:airline_symbols.paste = 'Þ'
 " Syntastic stuff
 let g:syntastic_warning_symbol = '⚠'
 let g:syntastic_error_symbol   = '✖'
+
+" Gundo mapping
+nmap <C-u> :GundoToggle<CR>

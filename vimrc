@@ -79,6 +79,9 @@ set smartcase     " Insensitive case unless there are some uppercase letters
 " Clear search highlight when done searching
 nnoremap <CR> :noh<CR><CR>
 
+" `_` is part of keywords
+set iskeyword+=_
+
 " Live dangerously
 set nobackup
 set noswapfile

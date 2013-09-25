@@ -167,7 +167,7 @@ map <Leader>gv :CtrlP app/views<CR>
 map <Leader>gm :CtrlP app/models<CR>
 map <Leader>gc :CtrlP app/controllers<CR>
 map <Leader>ga :CtrlP app/assets<CR>
-
+map <Leader>gl :CtrlP lib<CR>
 
 " Better :tjump
 nnoremap <c-]> :CtrlPtjump<cr>

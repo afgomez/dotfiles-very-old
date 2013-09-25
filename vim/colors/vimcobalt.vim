@@ -48,11 +48,12 @@ hi Todo     ctermfg=51  ctermbg=NONE  cterm=NONE  guifg=#00FFFF  guibg=NONE  gui
 
 " Diff colors
 "
-hi DiffAdd     ctermfg=15  ctermbg=64    cterm=bold  guifg=#ffffff  guibg=#40800d  gui=bold
+hi DiffAdd     ctermfg=64  ctermbg=NONE  cterm=NONE  guifg=#40800d guibg=NONE      gui=NONE
 hi DiffDelete  ctermfg=88  ctermbg=NONE  cterm=NONE  guifg=#850409  guibg=NONE     gui=NONE
 hi DiffChange  ctermfg=15  ctermbg=23    cterm=NONE  guifg=#ffffff  guibg=#143059  gui=NONE
 hi DiffText    ctermfg=15  ctermbg=24    cterm=bold  guifg=#ffffff  guibg=#204a87  gui=bold
-
+hi link diffAdded DiffAdd
+hi link diffRemoved DiffDelete
 
 " Syntastic colors
 "

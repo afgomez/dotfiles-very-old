@@ -1,6 +1,9 @@
 source ~/.bash/functions
 source ~/.bash/aliases
 
+# Config
+source ~/.bash/config
+
 # Load bash-completion from homebrew
 if [ -f $(brew --prefix)/share/bash-completion/bash_completion ]; then
   . $(brew --prefix)/share/bash-completion/bash_completion
@@ -16,9 +19,6 @@ done
 #  source $file
 # done
 
-
-# Config
-source ~/.bash/config
 
 # Other bash files
 if [ -f ~/.bashrc ]; then

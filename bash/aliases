@@ -13,7 +13,7 @@ alias gsmu="git submodule update --init"
 alias sc='script/console'
 alias ss='script/server'
 alias sg='script/generate'
-alias tlog='tail -f log/development.log'
+alias tlog='tail -f -n 250 log/development.log'
 alias rst='touch tmp/restart.txt'
 
 # Todo.txt

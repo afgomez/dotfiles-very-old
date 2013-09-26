@@ -11,6 +11,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'vim-scripts/YankRing.vim'
 Bundle 'sjl/gundo.vim'
+Bundle 'rking/ag.vim'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
@@ -157,6 +158,8 @@ let g:ctrlp_map = '<Leader>gf'
 let g:ctrlp_match_window = 'results:30'
 " let g:ctrlp_extensions = ['tag']
 
+" Ag.vim
+map <Leader>f :Ag<space>
 
 " Rails Gotofiles
 map <Leader>gv :CtrlP app/views<CR>

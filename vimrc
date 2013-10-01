@@ -157,6 +157,7 @@ let g:ctrlp_map = '<Leader>gf'
 let g:ctrlp_match_window = 'results:30'
 " let g:ctrlp_extensions = ['tag']
 
+map <Leader>gb :CtrlPBuffer<CR>
 " Ag.vim
 map <Leader>f :Ag<space>
 

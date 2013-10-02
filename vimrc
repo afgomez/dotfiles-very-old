@@ -9,31 +9,40 @@ call vundle#rc()
 
 " let Vundle manage Vundle
 Bundle 'gmarik/vundle'
+
+" Interface goodies
 Bundle 'vim-scripts/YankRing.vim'
 Bundle 'sjl/gundo.vim'
 Bundle 'rking/ag.vim'
+Bundle 'kien/ctrlp.vim'
+Bundle 'ivalkeen/vim-ctrlp-tjump'
+Bundle 'bling/vim-airline'
+
+" Behavior goodies
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-ragtag'
 Bundle 'tpope/vim-commentary'
-Bundle 'kien/ctrlp.vim'
-Bundle 'ivalkeen/vim-ctrlp-tjump'
-Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-fugitive'
-Bundle 'scrooloose/syntastic'
 Bundle 'szw/vim-tags'
+Bundle 'jiangmiao/auto-pairs'
+Bundle 'tsaleh/vim-matchit'
+Bundle 'tpope/vim-endwise'
+Bundle 'mmozuras/vim-whitespace'
+
 " Needed to enable autosave under iTerm2
-Bundle 'sjl/vitality.vim'
+if !has('gui_running')
+  Bundle 'sjl/vitality.vim'
+endif
+
+" Scream with code errors
+Bundle 'scrooloose/syntastic'
+
+
 " Helps debugging colorschemes
 Bundle 'gerw/vim-HiLinkTrace'
 " Whitespace is a bitch
-Bundle 'mmozuras/vim-whitespace'
-
-" Syntax helpers
-Bundle 'tpope/vim-endwise'
-Bundle 'jiangmiao/auto-pairs'
-Bundle 'tsaleh/vim-matchit'
 
 " Ruby on Rails
 Bundle 'vim-ruby/vim-ruby'

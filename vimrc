@@ -30,6 +30,7 @@ Bundle 'jiangmiao/auto-pairs'
 Bundle 'tsaleh/vim-matchit'
 Bundle 'tpope/vim-endwise'
 Bundle 'mmozuras/vim-whitespace'
+Bundle 'vim-scripts/bufkill.vim'
 
 " Needed to enable autosave under iTerm2
 if !has('gui_running')

@@ -142,6 +142,10 @@ set listchars=tab:▸\ ,eol:¬ " Use textmate invisible characters
 " Remove delay in vim-airline when leaving insert mode
 set ttimeoutlen=50
 
+" Show available options in Ex mode
+set wildmenu
+set wildmode=longest:full
+
 " Line numbers
 set number
 

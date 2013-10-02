@@ -99,9 +99,13 @@ noremap <Right> <NOP>
 
 
 " Remember last location in file
+function! PositionCursorFromViminfo()
+  if !(bufname("%") =~ '\(COMMIT_EDITMSG\)') && line("'\"") > 1 && line("'\"") <= line("$")
+    exe "normal! g`\""
+  endif
+endfunction
 if has("autocmd")
-   au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
-   \| exe "normal g'\"" | endif
+  au BufReadPost * call PositionCursorFromViminfo()
 endif
 
 

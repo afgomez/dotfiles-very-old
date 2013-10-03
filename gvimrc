@@ -2,8 +2,8 @@
 set guioptions-=T
 
 " Remove scrollbars
-set guioptions-=R
-set guioptions-=L
+set guioptions+=rRlL
+set guioptions-=rRlL
 
 " Use console dialogs
 set guioptions+=c

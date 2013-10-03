@@ -18,7 +18,7 @@ hi SpecialKey    ctermfg=235    ctermbg=NONE  cterm=NONE  guifg=#2b3749  guibg=N
 hi LineNr        ctermfg=102    ctermbg=NONE  cterm=NONE  guifg=#364350  guibg=#10182a  gui=NONE
 hi SignColumn    ctermfg=102    ctermbg=NONE  cterm=NONE  guifg=#364350  guibg=#10182a  gui=NONE
 hi CursorLine    ctermfg=none   ctermbg=234   cterm=NONE  guifg=NONE     guibg=#000000  gui=NONE
-hi CursorLineNr  ctermfg=white  ctermbg=234   cterm=NONE  guifg=#364350  guibg=#090e18
+hi CursorLineNr  ctermfg=white  ctermbg=234   cterm=NONE  guifg=#566370  guibg=#000000  gui=NONE
 hi CursorColumn  ctermfg=NONE   ctermbg=17    cterm=NONE  guifg=NONE     guibg=#212d40  gui=NONE
 hi ColorColumn   ctermfg=NONE   ctermbg=233   cterm=NONE  guifg=NONE     guibg=#151c2e  gui=NONE
 hi Visual        ctermfg=NONE   ctermbg=237   cterm=NONE  guifg=NONE     guibg=#533121  gui=NONE
@@ -57,8 +57,8 @@ hi link diffRemoved DiffDelete
 
 " Syntastic colors
 "
-hi SyntasticError        ctermfg=16    ctermbg=160   cterm=NONE  guifg=NONE     guibg=#CC0000  gui=NONE
-hi SyntasticWarning      ctermfg=16    ctermbg=166   cterm=NONE  guifg=NONE     guibg=#CC0000  gui=NONE
+hi SyntasticError        ctermfg=16    ctermbg=160   cterm=NONE  guifg=NONE     guibg=#cc0000  gui=NONE
+hi SyntasticWarning      ctermfg=16    ctermbg=166   cterm=NONE  guifg=NONE     guibg=#cc0000  gui=NONE
 hi SyntasticErrorSign    ctermfg=160   ctermbg=NONE  cterm=NONE  guifg=#cc0000  guibg=NONE     gui=NONE
 hi SyntasticWarningSign  ctermfg=220   ctermbg=NONE  cterm=NONE  guifg=#ffdd00  guibg=NONE     gui=NONE
 hi SyntasticErrorLine    ctermfg=NONE  ctermbg=52    cterm=NONE  guifg=NONE     guibg=#660000  gui=NONE

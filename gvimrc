@@ -33,4 +33,8 @@ if has("gui_macvim")
   " Cmd-CR behaves like Textmate/Sublime
   imap <D-CR> <C-o>o
 
+  " Move to previous/next as other apps (Firefox, Skype...)
+  macm Window.Select\ Previous\ Tab key=<D-M-Left>
+  macm Window.Select\ Next\ Tab key=<D-M-Right>
+
 endif

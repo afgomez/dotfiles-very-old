@@ -40,10 +40,8 @@ endif
 " Scream with code errors
 Bundle 'scrooloose/syntastic'
 
-
 " Helps debugging colorschemes
 Bundle 'gerw/vim-HiLinkTrace'
-" Whitespace is a bitch
 
 " Ruby on Rails
 Bundle 'vim-ruby/vim-ruby'

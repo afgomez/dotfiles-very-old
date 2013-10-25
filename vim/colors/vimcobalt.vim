@@ -45,6 +45,10 @@ hi Float   ctermfg=204  ctermbg=NONE  cterm=NONE  guifg=#ff628c  guibg=NONE  gui
 hi Comment  ctermfg=26  ctermbg=NONE  cterm=NONE  guifg=#0066cc  guibg=NONE  gui=italic
 hi Todo     ctermfg=51  ctermbg=NONE  cterm=NONE  guifg=#00FFFF  guibg=NONE  gui=italic
 
+" General markup colors
+"
+hi Title ctermfg=227 ctermbg=NONE cterm=bold guifg=#ffff66 guibg=#000000 gui=bold
+
 
 " Diff colors
 "

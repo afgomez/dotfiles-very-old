@@ -96,7 +96,7 @@ set nobackup
 set noswapfile
 
 " Wrap stuff
-set nowrap
+set wrap
 nmap j gj
 nmap k gk
 

@@ -149,8 +149,8 @@ set wildmode=longest:full
 set number
 
 " Toggle absolute and relative line numbers (useful for motions)
-map <C-l> :set relativenumber!<CR>
-imap <C-l> <C-o>:set relativenumber!<CR>
+map <leader>n :set relativenumber!<CR>
+
 
 
 " Coding stuff

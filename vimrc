@@ -160,7 +160,7 @@ map <leader>n :set relativenumber!<CR>
 
 " Coding stuff
 " ---------------------------------------------------------------------------
-set tabstop=8     " If there's some mixed indentation I wanna see it
+set tabstop=2
 set shiftwidth=2 softtabstop=2 expandtab
 
 set autoindent     " Indent

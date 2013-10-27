@@ -132,7 +132,7 @@ color vimcobalt      " And use a beautiful theme!
 set cmdheight=2      " I like high command status
 set laststatus=2     " Show last command
 set cursorline       " Show me where I am
-set colorcolumn=80   " To write code @rochgs ready
+set colorcolumn=+1   " To write code @rochgs ready
 
 set scrolloff=5      " Show some context when scrolling pages
 

@@ -130,7 +130,7 @@ set t_Co=256         " With all the colors in the world!
 color vimcobalt      " And use a beautiful theme!
 
 set cmdheight=2      " I like high command status
-set laststatus=2     " Show last command
+set laststatus=2     " Always show status line
 set cursorline       " Show me where I am
 set colorcolumn=+1   " To write code @rochgs ready
 

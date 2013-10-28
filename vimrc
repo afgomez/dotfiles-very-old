@@ -217,4 +217,4 @@ let g:syntastic_warning_symbol = '⚠'
 let g:syntastic_error_symbol   = '✖'
 
 " Gundo mapping
-nmap <C-u> :GundoToggle<CR>
+nmap <leader>u :GundoToggle<CR>

@@ -74,6 +74,9 @@ set autoread    " re-read a file if it has a different timestamp
 set selection=exclusive    " Don't include the character under the cursor in
                            " selection
 
+" remember more commands and search history
+set history=10000
+
 " Save files when focus is lost
 autocmd BufLeave,FocusLost * silent! wall
 

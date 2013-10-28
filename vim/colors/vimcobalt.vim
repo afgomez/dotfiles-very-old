@@ -24,6 +24,8 @@ hi ColorColumn   ctermfg=NONE   ctermbg=233   cterm=NONE  guifg=NONE     guibg=#
 hi Visual        ctermfg=NONE   ctermbg=237   cterm=NONE  guifg=NONE     guibg=#533121  gui=NONE
 hi VertSplit     ctermfg=233    ctermbg=233   cterm=NONE  guifg=#121212  guibg=#121212  gui=NONE
 
+hi Search        ctermfg=226  ctermbg=NONE  cterm=bold,underline  guifg=#ffff00  guibg=NONE  gui=bold,underline
+
 " General coding colors
 "
 hi Constant      ctermfg=204  ctermbg=NONE  cterm=NONE  guifg=#ff628c  guibg=NONE  gui=NONE

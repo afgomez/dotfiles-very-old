@@ -25,6 +25,7 @@ hi Visual        ctermfg=NONE   ctermbg=237   cterm=NONE  guifg=NONE     guibg=#
 hi VertSplit     ctermfg=233    ctermbg=233   cterm=NONE  guifg=#121212  guibg=#121212  gui=NONE
 
 hi Search        ctermfg=226  ctermbg=NONE  cterm=bold,underline  guifg=#ffff00  guibg=NONE  gui=bold,underline
+hi IncSearch     ctermfg=226  ctermbg=NONE  cterm=bold,underline  guifg=#ffff00  guibg=NONE  gui=bold,underline
 
 " General coding colors
 "

@@ -207,6 +207,13 @@ vnoremap <c-]> :CtrlPtjumpVisual<cr>
 let g:airline_theme = "powerlineish"
 let g:airline_powerline_fonts = 1
 
+" Disable whitespace warnings in airline, but keep indent warnings.
+"
+" I don't really care if there are any whitespace errors. They're going to be
+" fixed by 'mmozuras/vim-whitespace'
+let g:airline#extensions#whitespace#checks = [ 'indent' ]
+
+
 " Syntastic stuff
 let g:syntastic_warning_symbol = '⚠'
 let g:syntastic_error_symbol   = '✖'

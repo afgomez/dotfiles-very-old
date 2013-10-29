@@ -21,7 +21,7 @@ hi CursorLine    ctermfg=none   ctermbg=234   cterm=NONE  guifg=NONE     guibg=#
 hi CursorLineNr  ctermfg=white  ctermbg=234   cterm=NONE  guifg=#566370  guibg=#000000  gui=NONE
 hi CursorColumn  ctermfg=NONE   ctermbg=17    cterm=NONE  guifg=NONE     guibg=#212d40  gui=NONE
 hi ColorColumn   ctermfg=NONE   ctermbg=233   cterm=NONE  guifg=NONE     guibg=#151c2e  gui=NONE
-hi Visual        ctermfg=NONE   ctermbg=237   cterm=NONE  guifg=NONE     guibg=#533121  gui=NONE
+hi Visual        ctermfg=NONE   ctermbg=53    cterm=NONE  guifg=NONE     guibg=#674031  gui=NONE
 hi VertSplit     ctermfg=233    ctermbg=233   cterm=NONE  guifg=#121212  guibg=#121212  gui=NONE
 
 hi Search        ctermfg=226  ctermbg=NONE  cterm=bold,underline  guifg=#ffff00  guibg=NONE  gui=bold,underline

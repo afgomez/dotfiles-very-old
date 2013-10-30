@@ -5,7 +5,7 @@ set show-date = short
 set author-width = 15
 set show-id = yes
 set id-width = 8
-set line-graphics = yes
+set line-graphics = utf-8
 set show-refs = yes
 set show-rev-graph = yes
 

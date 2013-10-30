@@ -30,7 +30,7 @@ Bundle 'jiangmiao/auto-pairs'
 Bundle 'tsaleh/vim-matchit'
 Bundle 'tpope/vim-endwise'
 Bundle 'mmozuras/vim-whitespace'
-Bundle 'sickill/vim-pasta'
+" Bundle 'sickill/vim-pasta'
 Bundle 'vim-scripts/bufkill.vim'
 
 " Needed to enable autosave under iTerm2

@@ -100,6 +100,8 @@ hi link  cssValueNumber     cssAttr
 hi link  cssColor           cssAttr
 
 hi sassVariable ctermfg=249 ctermbg=NONE cterm=NONE guifg=#BBBBBB guibg=NONE gui=NONE
+hi link  sassIdChar     sassId
+hi link  sassId         cssIdentifier
 hi link  sassMixinName  Type
 hi link  sassClassChar  sassClass
 hi link  sassClass      cssClassName

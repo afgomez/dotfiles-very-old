@@ -9,6 +9,9 @@ set line-graphics = utf-8
 set show-refs = yes
 set show-rev-graph = yes
 
+# Behaviour
+set ignore-case = yes
+
 # In case someone uses tabs, show them nicely
 set tab-size = 2
 

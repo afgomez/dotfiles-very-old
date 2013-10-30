@@ -189,6 +189,12 @@ let g:ctrlp_match_window = 'results:30'
 " let g:ctrlp_extensions = ['tag']
 
 map <Leader>gb :CtrlPBuffer<CR>
+
+" Use ag for ctrl-p
+if executable('ag')
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+endif
+
 " Ag.vim
 map <Leader>f :Ag<space>
 

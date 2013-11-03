@@ -134,7 +134,15 @@ color vimcobalt      " And use a beautiful theme!
 set cmdheight=2      " I like high command status
 set laststatus=2     " Always show status line
 set cursorline       " Show me where I am
-set colorcolumn=+1   " To write code @rochgs ready
+
+" To write code @rochgs ready
+function! EnsureTextWidth()
+  if &tw == 0
+    setlocal tw=78
+  endif
+endfunction
+au Filetype * call EnsureTextWidth()
+set colorcolumn=+1
 
 set scrolloff=5      " Show some context when scrolling pages
 

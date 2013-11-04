@@ -196,15 +196,16 @@ let g:ctrlp_map = '<Leader>gf'
 let g:ctrlp_match_window = 'results:30'
 " let g:ctrlp_extensions = ['tag']
 
+" Use pwd as root
+map <Leader>gF :CtrlPRoot<CR>
+
+" Goto Buffer
 map <Leader>gb :CtrlPBuffer<CR>
 
 " Use ag for ctrl-p
 if executable('ag')
   let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 endif
-
-" Ag.vim
-map <Leader>f :Ag<space>
 
 " Rails Gotofiles
 map <Leader>gv :CtrlP app/views<CR>
@@ -216,6 +217,9 @@ map <Leader>gl :CtrlP lib<CR>
 " Better :tjump
 nnoremap <c-]> :CtrlPtjump<cr>
 vnoremap <c-]> :CtrlPtjumpVisual<cr>
+
+" Ag.vim
+map <Leader>f :Ag<space>
 
 " Airline stuff
 let g:airline_theme = "powerlineish"

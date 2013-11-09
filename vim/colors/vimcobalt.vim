@@ -50,7 +50,7 @@ hi Todo     ctermfg=51  ctermbg=NONE  cterm=NONE  guifg=#00FFFF  guibg=NONE  gui
 
 " General markup colors
 "
-hi Title ctermfg=227 ctermbg=NONE cterm=bold guifg=#ffff66 guibg=#000000 gui=bold
+hi Title ctermfg=227 ctermbg=NONE cterm=bold guifg=#ffff66 guibg=NONE gui=bold
 
 
 " Diff colors

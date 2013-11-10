@@ -1,6 +1,7 @@
 .DS_Store
 .svn
 .rvmrc
+.ruby-version
 .rbenv-*
 *~
 \#*#

@@ -181,9 +181,11 @@ set smartindent    " Be smart about it
 " ---------------------------------------------------------------------------
 
 " My big fingers constantly open the builtin help
+map <F1> <Nop>
 map! <F1> <Nop>
 map K <Nop>
 " Mac specific
+map <Help> <Nop>
 map! <Help> <Nop>
 
 " Emacs line movements in insert mode

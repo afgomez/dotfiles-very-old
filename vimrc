@@ -204,6 +204,7 @@ nnoremap <leader><leader> <c-^>
 let g:ctrlp_map = '<Leader>gf'
 let g:ctrlp_match_window = 'results:30'
 " let g:ctrlp_extensions = ['tag']
+let g:ctrlp_working_path_mode = 'rwa'
 
 " Use pwd as root
 map <Leader>gF :CtrlPRoot<CR>

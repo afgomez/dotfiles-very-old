@@ -127,6 +127,7 @@ endif
 
 " Interface stuff
 " ---------------------------------------------------------------------------
+set encoding=utf-8   " We are in the 21st century thank you very much
 syntax on            " Color all the things!
 set t_Co=256         " With all the colors in the world!
 color vimcobalt      " And use a beautiful theme!

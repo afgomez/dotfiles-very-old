@@ -137,13 +137,16 @@ set laststatus=2     " Always show status line
 set cursorline       " Show me where I am
 
 " To write code @rochgs ready
-function! EnsureTextWidth()
+" if the filetype of the file has some textwidth setting set the color column
+" dynamically. If not, set it to a reasonable default
+function! EnsureColorColumn()
   if &tw == 0
-    setlocal tw=78
+    setlocal colorcolumn=78
+  else
+    setlocal colorcolumn=+1
   endif
 endfunction
-au Filetype * call EnsureTextWidth()
-set colorcolumn=+1
+au Filetype * call EnsureColorColumn()
 
 set scrolloff=5      " Show some context when scrolling pages
 

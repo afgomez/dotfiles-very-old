@@ -170,7 +170,8 @@ set number
 " Toggle absolute and relative line numbers (useful for motions)
 map <leader>n :set relativenumber!<CR>
 
-
+" Square up visual selections...
+set virtualedit=block
 
 " Coding stuff
 " ---------------------------------------------------------------------------

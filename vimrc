@@ -54,7 +54,6 @@ Bundle 'JulesWang/css.vim'
 
 " Javascript
 Bundle 'pangloss/vim-javascript'
-Bundle 'othree/javascript-libraries-syntax.vim'
 
 filetype plugin indent on
 

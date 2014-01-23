@@ -251,3 +251,7 @@ let g:syntastic_error_symbol   = '✖'
 
 " Gundo mapping
 nmap <leader>u :GundoToggle<CR>
+
+
+" Local machine configuration
+source ~/.localvimrc

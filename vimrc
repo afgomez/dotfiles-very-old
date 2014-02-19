@@ -252,6 +252,8 @@ let g:syntastic_error_symbol   = '✖'
 " Gundo mapping
 nmap <leader>u :GundoToggle<CR>
 
+" Edit a file in the same path of the current one
+map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 
 " Local machine configuration
 source ~/.localvimrc

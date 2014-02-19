@@ -256,4 +256,6 @@ nmap <leader>u :GundoToggle<CR>
 map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 
 " Local machine configuration
-source ~/.localvimrc
+if filereadable("~/.localvimrc")
+  source ~/.localvimrc
+endif

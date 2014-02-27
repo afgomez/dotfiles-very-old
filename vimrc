@@ -17,6 +17,7 @@ Bundle 'rking/ag.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'ivalkeen/vim-ctrlp-tjump'
 Bundle 'bling/vim-airline'
+Bundle 'afgomez/better-cobalt.vim'
 
 " Behavior goodies
 Bundle 'tpope/vim-repeat'
@@ -129,7 +130,7 @@ endif
 set encoding=utf-8   " We are in the 21st century thank you very much
 syntax on            " Color all the things!
 set t_Co=256         " With all the colors in the world!
-color vimcobalt      " And use a beautiful theme!
+color better-cobalt      " And use a beautiful theme!
 
 set cmdheight=2      " I like high command status
 set laststatus=2     " Always show status line

@@ -211,6 +211,10 @@ let ruby_operators=1
 " Fast switch between files
 nnoremap <leader><leader> <c-^>
 
+" .vimrc quick changes
+noremap <leader>ev :tabnew $MYVIMRC<CR>
+noremap <leader>sv :source $MYVIMRC<CR>
+
 " CTRL-P extensions/options
 let g:ctrlp_map = '<Leader>gf'
 let g:ctrlp_match_window = 'results:30'

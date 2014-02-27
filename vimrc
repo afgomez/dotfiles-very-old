@@ -189,6 +189,9 @@ set smartindent    " Be smart about it
 " Kitchen sink
 " ---------------------------------------------------------------------------
 
+" Togle paste mode
+map <Leader>p :set paste!<CR>
+
 " My big fingers constantly open the builtin help
 map <F1> <Nop>
 map! <F1> <Nop>

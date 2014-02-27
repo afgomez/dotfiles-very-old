@@ -114,6 +114,10 @@ noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 
+" Reselect when shifting around
+vnoremap > ><CR>gv
+vnoremap < <<CR>gv
+
 " Remember last location in file
 function! PositionCursorFromViminfo()
   if !(bufname("%") =~ '\(COMMIT_EDITMSG\)') && line("'\"") > 1 && line("'\"") <= line("$")

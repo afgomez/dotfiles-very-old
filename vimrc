@@ -18,6 +18,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'ivalkeen/vim-ctrlp-tjump'
 Bundle 'bling/vim-airline'
 Bundle 'afgomez/better-cobalt.vim'
+Bundle 'afgomez/vim-foldtext'
 
 " Behavior goodies
 Bundle 'tpope/vim-repeat'
@@ -131,6 +132,11 @@ endfunction
 if has("autocmd")
   au BufReadPost * call PositionCursorFromViminfo()
 endif
+
+" Fold settings
+set foldmethod=syntax
+set foldenable
+set foldlevelstart=99
 
 
 " Interface stuff

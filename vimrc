@@ -99,15 +99,13 @@ set nobackup
 set noswapfile
 
 " Wrap stuff
-set wrap
-nmap j gj
-nmap k gk
-
-" Learn vim the hard way
-noremap <Up> <NOP>
-noremap <Down> <NOP>
-noremap <Left> <NOP>
-noremap <Right> <NOP>
+set nowrap
+noremap j gj
+noremap k gk
+noremap <Up> gj
+noremap <Down> gk
+inoremap <Up> <C-o>gj
+inoremap <Down> <C-o>gk
 
 " Easier window movements
 noremap <C-h> <C-w>h

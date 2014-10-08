@@ -8,55 +8,55 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
 " Interface goodies
-Bundle 'vim-scripts/YankRing.vim'
-Bundle 'sjl/gundo.vim'
-Bundle 'rking/ag.vim'
-Bundle 'kien/ctrlp.vim'
-Bundle 'ivalkeen/vim-ctrlp-tjump'
-Bundle 'bling/vim-airline'
-Bundle 'afgomez/better-cobalt.vim'
-Bundle 'afgomez/vim-foldtext'
+Plugin 'vim-scripts/YankRing.vim'
+Plugin 'sjl/gundo.vim'
+Plugin 'rking/ag.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'ivalkeen/vim-ctrlp-tjump'
+Plugin 'bling/vim-airline'
+Plugin 'afgomez/better-cobalt.vim'
+Plugin 'afgomez/vim-foldtext'
 
 " Behavior goodies
-Bundle 'tpope/vim-repeat'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-unimpaired'
-Bundle 'tpope/vim-ragtag'
-Bundle 'tpope/vim-commentary'
-Bundle 'tpope/vim-fugitive'
-Bundle 'szw/vim-tags'
-Bundle 'jiangmiao/auto-pairs'
-Bundle 'vim-scripts/matchit.zip'
-Bundle 'tpope/vim-endwise'
-Bundle 'mmozuras/vim-whitespace'
-" Bundle 'sickill/vim-pasta'
-Bundle 'vim-scripts/bufkill.vim'
-Bundle 'editorconfig/editorconfig-vim'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'tpope/vim-ragtag'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-fugitive'
+Plugin 'szw/vim-tags'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'vim-scripts/matchit.zip'
+Plugin 'tpope/vim-endwise'
+Plugin 'mmozuras/vim-whitespace'
+" Plugin 'sickill/vim-pasta'
+Plugin 'vim-scripts/bufkill.vim'
+Plugin 'editorconfig/editorconfig-vim'
 
 " Needed to enable autosave under iTerm2
 if !has('gui_running')
-  Bundle 'sjl/vitality.vim'
+  Plugin 'sjl/vitality.vim'
 endif
 
 " Scream with code errors
-Bundle 'scrooloose/syntastic'
+Plugin 'scrooloose/syntastic'
 
 " Helps debugging colorschemes
-Bundle 'gerw/vim-HiLinkTrace'
+Plugin 'gerw/vim-HiLinkTrace'
 
 " Ruby on Rails
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'tpope/vim-rails'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-rails'
 
 " HTML/CSS/SASS...
-Bundle 'othree/html5.vim'
-Bundle 'JulesWang/css.vim'
+Plugin 'othree/html5.vim'
+Plugin 'JulesWang/css.vim'
 
 " Javascript
-Bundle 'pangloss/vim-javascript'
+Plugin 'pangloss/vim-javascript'
 
 " Perl
 Plugin 'vim-perl/vim-perl'

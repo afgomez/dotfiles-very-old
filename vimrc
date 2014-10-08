@@ -33,6 +33,7 @@ Bundle 'tpope/vim-endwise'
 Bundle 'mmozuras/vim-whitespace'
 " Bundle 'sickill/vim-pasta'
 Bundle 'vim-scripts/bufkill.vim'
+Bundle 'editorconfig/editorconfig-vim'
 
 " Needed to enable autosave under iTerm2
 if !has('gui_running')

@@ -207,8 +207,24 @@ set smartindent    " Be smart about it
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
 
-" Expand with tab
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+" Don't open the menu automatically since is distracting.
+" Opens the menu with the <TAB> key (see below) and autoselect the first
+" occurence in the menu
+let g:neocomplete#disable_auto_complete = 1
+let g:neocomplete#enable_auto_select = 1
+
+" Tab expansion. Adapted from garyberndhardt dotfiles.
+function! InsertTabWrapper()
+  let col = col('.') - 1
+  if pumvisible()
+    return "\<C-n>"
+  elseif !col || getline('.')[col - 1] =~ '\s'
+    return "\<tab>"
+  else
+    return neocomplete#start_manual_complete()
+  endif
+endfunction
+inoremap <silent> <tab> <C-r>=InsertTabWrapper()<CR>
 
 " Accept completions with the Enter key
 inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>

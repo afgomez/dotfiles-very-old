@@ -58,6 +58,10 @@ Bundle 'JulesWang/css.vim'
 " Javascript
 Bundle 'pangloss/vim-javascript'
 
+" Autocomplete awesomess
+Plugin 'Shougo/neocomplete.vim'
+Plugin 'marijnh/tern_for_vim'
+
 filetype plugin indent on
 
 
@@ -194,6 +198,20 @@ set shiftwidth=2 softtabstop=2 expandtab
 
 set autoindent     " Indent
 set smartindent    " Be smart about it
+
+" Neocomplete settings
+" ---------------------------------------------------------------------------
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_smart_case = 1
+
+" Expand with tab
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
+" Accept completions with the Enter key
+inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
+function! s:my_cr_function()
+  return neocomplete#close_popup() . "\<CR>"
+endfunction
 
 
 " Kitchen sink

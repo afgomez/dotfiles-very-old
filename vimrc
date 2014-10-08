@@ -269,6 +269,7 @@ map <Leader>gl :CtrlP lib<CR>
 " Better :tjump
 nnoremap <c-]> :CtrlPtjump<cr>
 vnoremap <c-]> :CtrlPtjumpVisual<cr>
+let g:ctrlp_tjump_only_silent = 1
 
 " Ag.vim
 map <Leader>f :Ag<space>

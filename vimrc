@@ -117,6 +117,11 @@ noremap <C-l> <C-w>l
 vnoremap > ><CR>gv
 vnoremap < <<CR>gv
 
+" Use shift for selections in macvim
+if has("gui_macvim")
+  let macvim_hig_shift_movement = 1
+endif
+
 " Remember last location in file
 function! PositionCursorFromViminfo()
   if !(bufname("%") =~ '\(COMMIT_EDITMSG\)') && line("'\"") > 1 && line("'\"") <= line("$")

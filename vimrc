@@ -86,6 +86,9 @@ set selection=exclusive    " Don't include the character under the cursor in
 " remember more commands and search history
 set history=10000
 
+" When switching buffers go to an existing window if visible
+set switchbuf=useopen
+
 " Save files when focus is lost
 autocmd BufLeave,FocusLost * silent! wall
 

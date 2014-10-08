@@ -58,6 +58,9 @@ Bundle 'JulesWang/css.vim'
 " Javascript
 Bundle 'pangloss/vim-javascript'
 
+" Perl
+Plugin 'vim-perl/vim-perl'
+
 " Autocomplete awesomess
 Plugin 'Shougo/neocomplete.vim'
 Plugin 'marijnh/tern_for_vim'

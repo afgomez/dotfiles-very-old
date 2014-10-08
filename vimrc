@@ -110,10 +110,10 @@ set noswapfile
 set nowrap
 noremap j gj
 noremap k gk
-noremap <Up> gj
-noremap <Down> gk
-inoremap <Up> <C-o>gj
-inoremap <Down> <C-o>gk
+noremap <Down> gj
+noremap <Up> gk
+inoremap <Down> <C-o>gj
+inoremap <Up> <C-o>gk
 
 " Easier window movements
 noremap <C-h> <C-w>h

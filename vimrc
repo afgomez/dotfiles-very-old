@@ -57,6 +57,7 @@ Plugin 'JulesWang/css.vim'
 
 " Javascript
 Plugin 'pangloss/vim-javascript'
+Plugin 'moll/vim-node'
 
 " Perl
 Plugin 'vim-perl/vim-perl'

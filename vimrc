@@ -62,6 +62,10 @@ Plugin 'moll/vim-node'
 " Perl
 Plugin 'vim-perl/vim-perl'
 
+" Rust syntax
+Plugin 'wting/rust.vim'
+Plugin 'cespare/vim-toml'
+
 " Autocomplete awesomess
 Plugin 'Shougo/neocomplete.vim'
 Plugin 'marijnh/tern_for_vim'

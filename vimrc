@@ -227,17 +227,21 @@ function! InsertTabWrapper()
     return "\<C-n>"
   elseif !col || getline('.')[col - 1] =~ '\s'
     return "\<tab>"
-  else
+  elseif exists('g:loaded_neocomplete')
     return neocomplete#start_manual_complete()
+  else
+    return "\<C-n>"
   endif
 endfunction
 inoremap <silent> <tab> <C-r>=InsertTabWrapper()<CR>
 
 " Accept completions with the Enter key
-inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
-function! s:my_cr_function()
-  return neocomplete#close_popup() . "\<CR>"
-endfunction
+if exists('g:loaded_neocomplete')
+  inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
+  function! s:my_cr_function()
+    return neocomplete#close_popup() . "\<CR>"
+  endfunction
+endif
 
 
 " Kitchen sink

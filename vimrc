@@ -120,8 +120,6 @@ noremap j gj
 noremap k gk
 noremap <Down> gj
 noremap <Up> gk
-inoremap <Down> <C-o>gj
-inoremap <Up> <C-o>gk
 
 " Easier window movements
 noremap <C-h> <C-w>h

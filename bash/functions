@@ -2,7 +2,8 @@
 
 # Go to project inside the code directory
 function c {
-  cd ~/code/$1
+  CODE_PATH="${CODE_PATH:-~/code/}"
+  cd "$CODE_PATH/$1"
 }
 
 # Open sublime text with full_screen by default

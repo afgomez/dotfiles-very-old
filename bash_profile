@@ -8,7 +8,9 @@ source ~/.bash/config
 if [ -f $(brew --prefix)/share/bash-completion/bash_completion ]; then
   . $(brew --prefix)/share/bash-completion/bash_completion
 fi
-
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
 # Include local completions
 for file in ~/.bash/completion/* ; do
   source $file

@@ -4,20 +4,32 @@ set nocompatible
 " Vundle stuff
 " ---------------------------------------------------------------------------
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+
+" Check if Vundle is installed in this machine
+if !filereadable(expand('~/.vim/bundle/Vundle.vim/.git/config'))
+  echo "Installing Vundle..."
+  echo ""
+  silent !mkdir -p ~/.vim/bundle
+  silent !git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+endif
+
+call vundle#begin()
 
 " let Vundle manage Vundle
-Plugin 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 
 " Interface goodies
 Plugin 'vim-scripts/YankRing.vim'
 Plugin 'sjl/gundo.vim'
 Plugin 'rking/ag.vim'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'ivalkeen/vim-ctrlp-tjump'
-Plugin 'bling/vim-airline'
+Plugin 'FelikZ/ctrlp-py-matcher'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'afgomez/better-cobalt.vim'
+Plugin 'altercation/vim-colors-solarized.git'
 Plugin 'afgomez/vim-foldtext'
 
 " Behavior goodies
@@ -27,7 +39,6 @@ Plugin 'tpope/vim-unimpaired'
 Plugin 'tpope/vim-ragtag'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-fugitive'
-Plugin 'szw/vim-tags'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'vim-scripts/matchit.zip'
 Plugin 'tpope/vim-endwise'
@@ -53,11 +64,12 @@ Plugin 'tpope/vim-rails'
 
 " HTML/CSS/SASS...
 Plugin 'othree/html5.vim'
-Plugin 'JulesWang/css.vim'
+Plugin 'hail2u/vim-css3-syntax'
+" Plugin 'JulesWang/css.vim'
+Plugin 'mustache/vim-mustache-handlebars'
 
 " Javascript
 Plugin 'pangloss/vim-javascript'
-Plugin 'moll/vim-node'
 
 " Perl
 Plugin 'vim-perl/vim-perl'
@@ -67,9 +79,12 @@ Plugin 'wting/rust.vim'
 Plugin 'cespare/vim-toml'
 
 " Autocomplete awesomess
-Plugin 'Shougo/neocomplete.vim'
-Plugin 'marijnh/tern_for_vim'
+if has('lua') && (v:version > 703 || v:version == 703 && has('patch885'))
+  Plugin 'Shougo/neocomplete.vim'
+  Plugin 'marijnh/tern_for_vim'
+endif
 
+call vundle#end()
 filetype plugin indent on
 
 
@@ -138,7 +153,7 @@ endif
 
 " Remember last location in file
 function! PositionCursorFromViminfo()
-  if !(bufname("%") =~ '\(COMMIT_EDITMSG\)') && line("'\"") > 1 && line("'\"") <= line("$")
+  if &ft != 'gitcommit' && line("'\"") > 1 && line("'\"") <= line("$")
     exe "normal! g`\""
   endif
 endfunction
@@ -151,13 +166,35 @@ set foldmethod=syntax
 set foldenable
 set foldlevelstart=99
 
+" Persistent undo
+set undofile                " Save undo's after file closes
+set undodir=$HOME/.vim/undo " where to save undo histories
+set undolevels=1000         " How many undos
+set undoreload=10000        " number of lines to save for undo
+
 
 " Interface stuff
 " ---------------------------------------------------------------------------
 set encoding=utf-8   " We are in the 21st century thank you very much
 syntax on            " Color all the things!
 set t_Co=256         " With all the colors in the world!
-color better-cobalt      " And use a beautiful theme!
+
+" Set a bright colorscheme for presentations in projectors
+if $ITERM_PROFILE == 'Demos'
+  set background=light
+  colorscheme solarized
+  set nolist
+else
+  color better-cobalt  " And use a beautiful theme!
+  let g:airline_theme = "powerlineish"
+  set list
+endif
+
+" Make vitality work over SSH/tmux
+" I always use iTerm anyway so...
+if (!has('gui'))
+  let g:vitality_always_assume_iterm=1
+endif
 
 set cmdheight=2      " I like high command status
 set laststatus=2     " Always show status line
@@ -236,12 +273,10 @@ endfunction
 inoremap <silent> <tab> <C-r>=InsertTabWrapper()<CR>
 
 " Accept completions with the Enter key
-if exists('g:loaded_neocomplete')
-  inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
-  function! s:my_cr_function()
-    return neocomplete#close_popup() . "\<CR>"
-  endfunction
-endif
+function! s:my_cr_function()
+  return pumvisible() ? "\<C-y>" : "\<CR>"
+endfunction
+inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
 
 
 " Kitchen sink
@@ -273,7 +308,7 @@ nnoremap <leader><leader> <c-^>
 let g:ctrlp_map = '<Leader>gf'
 let g:ctrlp_match_window = 'results:30'
 " let g:ctrlp_extensions = ['tag']
-let g:ctrlp_working_path_mode = 'rwa'
+let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
 
 " Use pwd as root
 map <Leader>gF :CtrlPRoot<CR>
@@ -281,10 +316,7 @@ map <Leader>gF :CtrlPRoot<CR>
 " Goto Buffer
 map <Leader>gb :CtrlPBuffer<CR>
 
-" Use ag for ctrl-p
-if executable('ag')
-  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
-endif
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard', 'ag %s -l --nocolor --hidden -g ""']
 
 " Rails Gotofiles
 map <Leader>gv :CtrlP app/views<CR>
@@ -313,8 +345,14 @@ let g:airline#extensions#whitespace#checks = [ 'indent' ]
 
 
 " Syntastic stuff
-let g:syntastic_warning_symbol = '⚠'
-let g:syntastic_error_symbol   = '✖'
+let g:syntastic_warning_symbol = '•'
+let g:syntastic_error_symbol   = '•'
+
+let g:syntastic_mode_map = { 'mode': 'active',
+                           \ 'passive_filetypes': ['perl', 'html'] }
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_javascript_checkers = ['jshint']
 
 " Gundo mapping
 nmap <leader>u :GundoToggle<CR>

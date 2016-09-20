@@ -1,7 +1,12 @@
 alias ..='cd ..'
+alias grep='grep --color'
 
 # ls
-alias ls='ls -FG'
+if [ `uname -s` == "Darwin"  ]; then
+  alias ls='ls -FG'
+else
+  alias ls='ls --color=yes'
+fi
 alias ll='ls -l'
 alias la='ls -A'
 

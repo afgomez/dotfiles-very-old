@@ -14,6 +14,8 @@ alias la='ls -A'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias gsmu="git submodule update --init"
 
+type hub >/dev/null 2>&1 && alias git='hub'
+
 # rails
 alias sc='script/console'
 alias ss='script/server'

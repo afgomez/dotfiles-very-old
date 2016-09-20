@@ -10,15 +10,6 @@ branch=$(__git_ps1 "%s")
    if [[ $branch == master* ]]; then
      color="\033[0;31m" # Red
    fi
-   if [[ $branch == dev* ]]; then
-     color="\033[0;32m" # Green
-   fi
-   if [[ $branch == features* ]]; then
-     color="\033[0;36m" # Cyan
-   fi
-   if [[ $branch == fix* ]]; then
-     color="\033[0;35m" # Light Red
-   fi
    branch=$(printf "${branch}")
    color=$(printf "${color}")
 
@@ -27,4 +18,12 @@ else
   status="${status}\$ "
 fi
 
-echo "$status"
+# Don't try to print the server role name if there is none
+host=""
+if [[ $SERVER_ROLE_NAME ]]; then
+    host="\[\033[0;33m\]$SERVER_ROLE_NAME\[\033[0;0m\] "
+elif [[ $SSH_CONNECTION ]]; then
+    host="\[\033[0;33m\]\h\[\033[0;0m\] "
+fi
+
+echo "$host$status"

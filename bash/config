@@ -7,6 +7,9 @@ export HISTSIZE=1000
 shopt -s histappend
 export PROMPT_COMMAND='history -a'
 
+# Rbenv with homebrew
+export RBENV_ROOT=/usr/local/var/rbenv
+
 # Change the locale for bash messages
 export LC_MESSAGES="en_US.UTF-8"
 

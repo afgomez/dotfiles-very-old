@@ -21,6 +21,8 @@ done
 #  source $file
 # done
 
+# Rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Other bash files
 if [ -f ~/.bashrc ]; then

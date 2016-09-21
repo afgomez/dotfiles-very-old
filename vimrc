@@ -78,6 +78,9 @@ Plugin 'vim-perl/vim-perl'
 Plugin 'wting/rust.vim'
 Plugin 'cespare/vim-toml'
 
+" Elixir syntax
+Plugin 'elixir-lang/vim-elixir'
+
 " Autocomplete awesomess
 if has('lua') && (v:version > 703 || v:version == 703 && has('patch885'))
   Plugin 'Shougo/neocomplete.vim'

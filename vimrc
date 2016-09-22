@@ -350,6 +350,8 @@ let g:airline#extensions#whitespace#checks = [ 'indent' ]
 " Syntastic stuff
 let g:syntastic_warning_symbol = '•'
 let g:syntastic_error_symbol   = '•'
+let g:syntastic_style_warning_symbol = '•'
+let g:syntastic_style_error_symbol   = '•'
 
 let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'passive_filetypes': ['perl', 'html', 'scss'] }

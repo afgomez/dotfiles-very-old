@@ -2,7 +2,7 @@
 
 # Go to project inside the code directory
 function c {
-  CODE_PATH="${CODE_PATH:-~/code/}"
+  CODE_PATH=${CODE_PATH:-~/code/}
   cd "$CODE_PATH/$1"
 }
 

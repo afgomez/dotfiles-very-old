@@ -240,6 +240,9 @@ map <leader>n :set relativenumber!<CR>
 " Square up visual selections...
 set virtualedit=block
 
+" Highlight JSDocs
+let g:javascript_plugin_jsdoc = 1
+
 " Coding stuff
 " ---------------------------------------------------------------------------
 set tabstop=2

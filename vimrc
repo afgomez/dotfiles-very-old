@@ -315,6 +315,7 @@ let g:ctrlp_map = '<Leader>gf'
 let g:ctrlp_match_window = 'results:30'
 " let g:ctrlp_extensions = ['tag']
 let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
+let g:ctrlp_max_files=0
 
 " Use pwd as root
 map <Leader>gF :CtrlPRoot<CR>
@@ -323,13 +324,6 @@ map <Leader>gF :CtrlPRoot<CR>
 map <Leader>gb :CtrlPBuffer<CR>
 
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard', 'ag %s -l --nocolor --hidden -g ""']
-
-" Rails Gotofiles
-map <Leader>gv :CtrlP app/views<CR>
-map <Leader>gm :CtrlP app/models<CR>
-map <Leader>gc :CtrlP app/controllers<CR>
-map <Leader>ga :CtrlP app/assets<CR>
-map <Leader>gl :CtrlP lib<CR>
 
 " Better :tjump
 nnoremap <c-]> :CtrlPtjump<cr>

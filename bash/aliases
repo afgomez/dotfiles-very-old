@@ -15,6 +15,7 @@ alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias gsmu="git submodule update --init"
 
 type hub >/dev/null 2>&1 && alias git='hub'
+type pygmentize >/dev/null 2>&1 && alias ccat='pygmentize -O style=monokai -f console256 -g'
 
 # rails
 alias sc='script/console'

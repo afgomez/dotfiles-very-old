@@ -70,6 +70,7 @@ Plugin 'mustache/vim-mustache-handlebars'
 
 " Javascript
 Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 
 " Perl
 Plugin 'vim-perl/vim-perl'
@@ -242,6 +243,9 @@ set virtualedit=block
 
 " Highlight JSDocs
 let g:javascript_plugin_jsdoc = 1
+
+" Highlight JSX everywhere
+let g:jsx_ext_required = 0
 
 " Coding stuff
 " ---------------------------------------------------------------------------

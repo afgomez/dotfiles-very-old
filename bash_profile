@@ -11,15 +11,14 @@ fi
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
+
 # Include local completions
 for file in ~/.bash/completion/* ; do
   source $file
 done
 
-# Include homebrew completions
-# for file in $(brew --prefix)/etc/bash_completion.d/* ; do
-#  source $file
-# done
+# Command corrector
+type thefuck >/dev/null 2>&1 && eval "$(thefuck --alias)"
 
 # Rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi

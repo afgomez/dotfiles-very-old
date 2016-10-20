@@ -116,7 +116,10 @@ set history=10000
 set switchbuf=useopen
 
 " Save files when focus is lost
-autocmd BufLeave,FocusLost * silent! wall
+augroup focus_lost
+  autocmd!
+  autocmd BufLeave,FocusLost * silent! wall
+augroup END
 
 " Splits
 set splitright      " Vertical splits to the right
@@ -164,7 +167,9 @@ function! PositionCursorFromViminfo()
   endif
 endfunction
 if has("autocmd")
-  au BufReadPost * call PositionCursorFromViminfo()
+  augroup cursor
+    au BufReadPost * call PositionCursorFromViminfo()
+  augroup END
 endif
 
 " Fold settings

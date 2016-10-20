@@ -54,7 +54,8 @@ if !has('gui_running')
 endif
 
 " Scream with code errors
-Plugin 'scrooloose/syntastic'
+" Plugin 'scrooloose/syntastic'
+Plugin 'neomake/neomake'
 
 " Helps debugging colorschemes
 Plugin 'gerw/vim-HiLinkTrace'
@@ -348,6 +349,20 @@ let g:airline_powerline_fonts = 1
 " fixed by 'mmozuras/vim-whitespace'
 let g:airline#extensions#whitespace#checks = [ 'indent' ]
 
+" Neomake settings
+augroup neomake
+  autocmd!
+  autocmd BufWritePost * Neomake
+augroup END
+
+let g:neomake_error_sign   = { 'text': '•' }
+let g:neomake_info_sign    = { 'text': '•' }
+let g:neomake_message_sign = { 'text': '•' }
+let g:neomake_warning_sign = { 'text': '•' }
+
+let g:neomake_js_enabled_makers   = ['eslint']
+let g:neomake_ruby_enabled_makers = ['mri', 'rubocop']
+let g:neomake_scss_enabled_makers = ['scsslint']
 
 " Syntastic stuff
 let g:syntastic_warning_symbol = '•'

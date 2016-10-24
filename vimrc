@@ -356,10 +356,7 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#whitespace#checks = [ 'indent', 'long', 'mixed-indent-file']
 
 " Neomake settings
-augroup neomake
-  autocmd!
-  autocmd BufWritePost * Neomake
-augroup END
+autocmd! BufWritePost * Neomake
 
 let g:neomake_error_sign   = { 'text': '•' }
 let g:neomake_info_sign    = { 'text': '•' }
@@ -369,6 +366,7 @@ let g:neomake_warning_sign = { 'text': '•' }
 let g:neomake_js_enabled_makers   = ['eslint']
 let g:neomake_ruby_enabled_makers = ['mri', 'rubocop']
 let g:neomake_scss_enabled_makers = ['scsslint']
+let g:neomake_haml_enabled_makers = ['hamllint']
 
 " Syntastic stuff
 let g:syntastic_warning_symbol = '•'

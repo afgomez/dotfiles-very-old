@@ -73,6 +73,7 @@ Plugin 'mustache/vim-mustache-handlebars'
 " Javascript
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+Plugin 'briancollins/vim-jst'
 
 " Perl
 Plugin 'vim-perl/vim-perl'

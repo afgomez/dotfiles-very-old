@@ -353,7 +353,7 @@ let g:airline_powerline_fonts = 1
 "
 " I don't really care if there are any whitespace errors. They're going to be
 " fixed by 'mmozuras/vim-whitespace'
-let g:airline#extensions#whitespace#checks = [ 'indent' ]
+let g:airline#extensions#whitespace#checks = [ 'indent', 'long', 'mixed-indent-file']
 
 " Neomake settings
 augroup neomake
